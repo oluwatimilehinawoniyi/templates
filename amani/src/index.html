@@ -15,7 +15,11 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <section data-gjs-type="navbar" class="gjs-block-section bg-amaniGrey">
+    <section
+      data-gjs-type="navbar"
+      id="navbar"
+      class="gjs-block-section bg-amaniGrey"
+    >
       <div class="max-w-[1240px] p-4 mx-auto flex items-center justify-between">
         <div class="">
           <h1 class="font-lora text-2xl font-semibold">Amani</h1>
@@ -39,6 +43,7 @@
     <!-- HERO SECTION -->
     <section
       data-gjs-type="hero"
+      id="hero"
       class="gjs-block-section h-auto py-8 bg-amaniGrey"
     >
       <div
@@ -84,6 +89,7 @@
     <!-- CLASSES/FEATURES SECTION -->
     <section
       data-gjs-type="features"
+      id="features"
       class="gjs-block-section h-auto py-8 bg-white"
     >
       <div class="max-w-[1240px] mx-auto px-4 flex flex-col items-center gap-4">
@@ -141,6 +147,7 @@
 
     <!-- SCHEDULE SECTION -->
     <section
+      id="schedule"
       data-gjs-type="schedule"
       class="gjs-block-section h-auto py-8 bg-amaniGrey"
     >
@@ -233,6 +240,7 @@
 
     <!-- PRICING SECTION -->
     <section
+      id="pricing"
       data-gjs-type="pricing"
       class="gjs-block-section h-auto py-8 bg-white"
     >
@@ -319,9 +327,10 @@
       </div>
     </section>
 
-    <!-- INSTAGRAM SECTION -->
+    <!-- SOCIAL SECTION -->
     <section
-      data-gjs-type="instagram"
+      data-gjs-type="social"
+      id="social"
       class="gjs-block-section h-auto py-8 bg-amaniGrey"
     >
       <div class="max-w-[1240px] mx-auto px-4 space-y-4">
@@ -336,24 +345,125 @@
           for the latest updates! <b>@_Amani</b>
         </p>
 
-        <div class="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2">
-          <div class=""></div>
+        <div
+          class="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 gap-4"
+        >
+          <div
+            class="size-40"
+            style="
+              background-image: url('./assets/images/instagram-1.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="size-40"
+            style="
+              background-image: url('./assets/images/instagram-2.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="size-40"
+            style="
+              background-image: url('./assets/images/instagram-3.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="size-40"
+            style="
+              background-image: url('./assets/images/instagram-4.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="size-40"
+            style="
+              background-image: url('./assets/images/instagram-5.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="size-40"
+            style="
+              background-image: url('./assets/images/instagram-6.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="size-40"
+            style="
+              background-image: url('./assets/images/instagram-7.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="size-40"
+            style="
+              background-image: url('./assets/images/instagram-8.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
         </div>
       </div>
     </section>
 
     <!-- FOOTER SECTION -->
-    <section data-gjs-type="footer" class="">
-      <div class="max-w-[1240px] mx-auto px-4 flex justify-between items-start">
+    <section data-gjs-type="footer" id="footer" class="bg-black">
+      <div
+        class="max-w-[1240px] mx-auto px-4 flex flex-col items-center gap-8 py-8"
+      >
         <div
-          class="w-full h-full"
-          style="
-            background-image: url('./assets/images/hero.png');
-            background-position: bottom;
-            background-size: cover;
-            background-repeat: no-repeat;
-          "
-        ></div>
+          class="w-full flex flex-col md:flex-row justify-between items-start gap-8"
+        >
+          <div
+            class="w-full space-y-2 text-white *:text-center flex flex-col items-center"
+          >
+            <h1 class="capitalize font-lora text-lg">contacts</h1>
+            <p class="capitalize font-work-sans">amaniyoga@gmail.com</p>
+            <div class="flex items-center gap-4">
+              <img src="./assets/images/instagram.png" alt="instagram icon" />
+              <img src="./assets/images/twitter.png" alt="twitter icon" />
+              <img src="./assets/images/telegram.png" alt="telegram icon" />
+              <img src="./assets/images/facebook.png" alt="facebook icon" />
+            </div>
+          </div>
+          <div
+            class="w-full space-y-2 text-white *:text-center flex flex-col items-center"
+          >
+            <h1 class="capitalize font-lora text-lg">address</h1>
+            <p class="capitalize font-work-sans">+123 456 789</p>
+            <p class="capitalize font-work-sans">
+              107th St. Bluffon, CA 90303, USA
+            </p>
+          </div>
+          <div
+            class="w-full space-y-2 text-white *:text-center flex flex-col items-center"
+          >
+            <h1 class="capitalize font-lora text-lg">information</h1>
+            <p class;="capitalize font-work-sans">private policy</p>
+            <p class="capitalize font-work-sans">contract offer</p>
+          </div>
+        </div>
+        <p class="capitalize text-white text-sm text-center">
+          2023 &copy;Amani. all rights reserved
+        </p>
       </div>
     </section>
   </body>
