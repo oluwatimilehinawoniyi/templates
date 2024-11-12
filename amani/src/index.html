@@ -3,9 +3,358 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="output.css" />
-    <title>Document</title>
+    <title>amani</title>
   </head>
-  <body></body>
+  <body>
+    <!-- NAVBAR -->
+    <section data-gjs-type="navbar" class="gjs-block-section bg-amaniGrey">
+      <div class="max-w-[1240px] p-4 mx-auto flex items-center justify-between">
+        <div class="">
+          <h1 class="font-lora text-2xl font-semibold">Amani</h1>
+        </div>
+        <div class="flex items-center gap-8">
+          <nav class="hidden md:flex items-center gap-4">
+            <a href="" class="capitalize font-work-sans">home</a>
+            <a href="" class="capitalize font-work-sans">about us</a>
+            <a href="" class="capitalize font-work-sans">classes</a>
+            <a href="" class="capitalize font-work-sans">contacts</a>
+          </nav>
+          <button
+            class="font-work-sans bg-black text-white capitalize rounded-2xl px-2.5 h-10 w-28"
+          >
+            sign up
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section
+      data-gjs-type="hero"
+      class="gjs-block-section h-auto py-8 bg-amaniGrey"
+    >
+      <div
+        class="max-w-[1240px] mx-auto px-4 flex flex-col-reverse gap-8 md:flex-row md:justify-between"
+      >
+        <!-- hero text -->
+        <div class="flex flex-col gap-4 items-center">
+          <h1
+            class="font-lora uppercase text-center md:text-left text-3xl md:text-[50px] leading-10 lg:leading-[70px]"
+          >
+            yoga is the fuel that powers your journey towards your destination
+          </h1>
+
+          <p class="font-work-sans text-center md:text-left">
+            Returning to your true self can be that straightforward. Yoga
+            provides a path to perceive a world that supports you rather than
+            opposes you. <br />
+            <br />
+            It serves as a reminder that everything is interconnected, urging us
+            to live, act, and breathe with awareness. The journey itself is the
+            reward.
+          </p>
+
+          <span class="flex items-center gap-2 cursor-pointer w-max">
+            <p class="capitalize underline underline-offset-4">read more</p>
+            <img src="./assets/images/right-arrow.png" alt="arrow icon" />
+          </span>
+        </div>
+
+        <!-- hero image -->
+        <div
+          class="w-full h-[325px] md:w-[496px] md:h-[650px]"
+          style="
+            background-image: url('./assets/images/hero.png');
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        ></div>
+      </div>
+    </section>
+
+    <!-- CLASSES/FEATURES SECTION -->
+    <section
+      data-gjs-type="features"
+      class="gjs-block-section h-auto py-8 bg-white"
+    >
+      <div class="max-w-[1240px] mx-auto px-4 flex flex-col items-center gap-4">
+        <h1 class="font-lora text-center text-2xl md:text-4xl capitalize">
+          our classes
+        </h1>
+        <p class="font-work-sans text-center">
+          Our classes generally include a blend of physical postures,
+          breathwork, and meditation, all aimed at building strength, increasing
+          flexibility, relieving stress, and supporting overall well-being. With
+          styles ranging from gentle to intense, it's recommended to seek
+          guidance from a qualified instructor when beginning any new practice.
+        </p>
+
+        <div class="w-full">
+          <div class="flex flex-col items-center gap-4 w-full mt-6">
+            <div
+              class="w-full h-[300px]"
+              style="
+                background-image: url('./assets/images/class-1.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            ></div>
+            <h1 class="font-lora capitalize">yoga for beginners</h1>
+          </div>
+          <div class="flex flex-col items-center gap-4 w-full mt-6">
+            <div
+              class="w-full h-[300px]"
+              style="
+                background-image: url('./assets/images/class-3.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            ></div>
+            <h1 class="font-lora capitalize">3 weeks yoga workout</h1>
+          </div>
+          <div class="flex flex-col items-center gap-4 w-full mt-6">
+            <div
+              class="w-full h-[300px]"
+              style="
+                background-image: url('./assets/images/class-2.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            ></div>
+            <h1 class="font-lora capitalize">body. breathe. mind</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section
+      data-gjs-type="schedule"
+      class="gjs-block-section h-auto py-8 bg-amaniGrey"
+    >
+      <div class="px-4 flex flex-col gap-4">
+        <h1
+          class="font-lora uppercase text-2xl text-center md:text-center md:text-4xl"
+        >
+          classes for every <br />
+          level and need
+        </h1>
+        <p class="font-work-sans text-center md:text-left">
+          Whether you’re a beginner or a seasoned yogi, whether you're looking
+          for a moment of peace or aiming to perfect your headstand, we have
+          options to suit your needs and schedule.
+        </p>
+
+        <div
+          class="flex flex-col md:flex-row md:gap-8 md:justify-between gap-4"
+        >
+          <table>
+            <tr
+              class="*:font-lora *:font-normal border-y-2 border-black *:text-left"
+            >
+              <th>DAY</th>
+              <th>CLASS</th>
+              <th>TIME</th>
+            </tr>
+            <tr
+              class="border-b border-black *:text-sm *:min-[420px]:text-base *:py-2"
+            >
+              <td>MONDAY</td>
+              <td>Sunrise Flow</td>
+              <td>7:30 AM - 8:45 AM</td>
+            </tr>
+            <tr
+              class="border-b border-black *:text-sm *:min-[420px]:text-base *:py-2"
+            >
+              <td>TUESDAY</td>
+              <td>Dynamic Vinyasa</td>
+              <td>8:20 AM - 9:20 AM</td>
+            </tr>
+            <tr
+              class="border-b border-black *:text-sm *:min-[420px]:text-base *:py-2"
+            >
+              <td>WEDNESDAY</td>
+              <td>Tranquil Flow</td>
+              <td>8:15 AM - 9:45 AM</td>
+            </tr>
+            <tr
+              class="border-b border-black *:text-sm *:py-2 *:min-[420px]:text-base"
+            >
+              <td>THURSDAY</td>
+              <td>Soulful Kundalini</td>
+              <td>3:30 PM - 4:45 PM</td>
+            </tr>
+            <tr
+              class="border-b border-black *:text-sm *:py-2 *:min-[420px]:text-base"
+            >
+              <td>FRIDAY</td>
+              <td>Gentle Yin</td>
+              <td>2:00 PM - 3:15 PM</td>
+            </tr>
+            <tr
+              class="border-b border-black *:text-sm *:py-2 *:min-[420px]:text-base"
+            >
+              <td>SATURDAY</td>
+              <td>Rhythm & Flow</td>
+              <td>10:00 AM - 11:45 AM</td>
+            </tr>
+            <tr
+              class="border-b border-black *:text-sm *:py-2 *:min-[420px]:text-base"
+            >
+              <td>SUNDAY</td>
+              <td>Evening Harmony</td>
+              <td>6:30 PM - 7:30 PM</td>
+            </tr>
+          </table>
+          <div
+            class="w-full h-[300px]"
+            style="
+              background-image: url('./assets/images/schedule.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section
+      data-gjs-type="pricing"
+      class="gjs-block-section h-auto py-8 bg-white"
+    >
+      <div class="max-w-[1240px] mx-auto px-4 space-y-4">
+        <h1
+          class="font-lora uppercase text-2xl md:text-4xl text-center md:text-left"
+        >
+          select a membership <br />
+          that suits your needs
+        </h1>
+
+        <p class="font-work-sans text-center md:text-left">
+          Discover our range of membership options designed to accommodate every
+          level and lifestyle. Whether you want unlimited classes, occasional
+          drop-ins, or something in between, we have the perfect fit for you.
+          Your journey starts here!
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="bg-black rounded-xl p-4 space-y-4">
+            <h1 class="uppercase font-lora text-white text-center text-2xl">
+              essential flow
+            </h1>
+            <ul class="*:text-white *:text-center *:capitalize *:text-sm">
+              <li>5 drop-in classes</li>
+              <li>Valid for 3 months</li>
+              <li>Access to beginner-level classes</li>
+            </ul>
+
+            <p class="text-center capitalize text-3xl text-white">free</p>
+            <button
+              class="font-work-sans text-black bg-white capitalize rounded-2xl px-2.5 h-10 w-full"
+            >
+              join the class
+            </button>
+          </div>
+          <div class="bg-black rounded-xl p-4 space-y-4">
+            <h1 class="uppercase font-lora text-white text-center text-2xl">
+              balanced journey
+            </h1>
+            <ul class="*:text-white *:text-center *:capitalize *:text-sm">
+              <li>10-Classes Package</li>
+              <li>Valid for 6 months</li>
+              <li>Access to all-level classes</li>
+              <li>1 free mindfulness workshop</li>
+            </ul>
+
+            <div
+              class="text-center capitalize text-3xl text-white flex items-center justify-center"
+            >
+              <p>$</p>
+              <p>70</p>
+            </div>
+            <button
+              class="font-work-sans text-black bg-white capitalize rounded-2xl px-2.5 h-10 w-full"
+            >
+              join the class
+            </button>
+          </div>
+          <div class="bg-black rounded-xl p-4 space-y-4">
+            <h1 class="uppercase font-lora text-white text-center text-2xl">
+              elevated experience
+            </h1>
+            <ul class="*:text-white *:text-center *:capitalize *:text-sm">
+              <li>monthly unlimited pass</li>
+              <li>access to all classes</li>
+              <li>free weekend retreats</li>
+              <li>15% merchandise discount</li>
+            </ul>
+
+            <div
+              class="text-center capitalize text-3xl text-white flex items-center justify-center"
+            >
+              <p>$</p>
+              <p>150</p>
+            </div>
+            <button
+              class="font-work-sans text-black bg-white capitalize rounded-2xl px-2.5 h-10 w-full"
+            >
+              join the class
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM SECTION -->
+    <section
+      data-gjs-type="instagram"
+      class="gjs-block-section h-auto py-8 bg-amaniGrey"
+    >
+      <div class="max-w-[1240px] mx-auto px-4 space-y-4">
+        <h1
+          class="font-lora uppercase text-2xl md:text-4xl text-center md:text-left"
+        >
+          our instagram
+        </h1>
+
+        <p class="font-work-sans text-center md:text-left">
+          We make online learning engaging and exciting. Follow us on Instagram
+          for the latest updates! <b>@_Amani</b>
+        </p>
+
+        <div class="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2">
+          <div class=""></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section data-gjs-type="footer" class="">
+      <div class="max-w-[1240px] mx-auto px-4 flex justify-between items-start">
+        <div
+          class="w-full h-full"
+          style="
+            background-image: url('./assets/images/hero.png');
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        ></div>
+      </div>
+    </section>
+  </body>
 </html>
