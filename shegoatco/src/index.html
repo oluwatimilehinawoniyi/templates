@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Preahvihear&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SheGoatCo</title>
+  </head>
+  <body>
+    <main class="">
+      <!-- hero -->
+      <section
+        id="hero"
+        data-gjs-type="hero"
+        class="relative h-screen gjs-block-section"
+        style="
+          background-image: url('./assets/images/hero.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="relative z-50 px-4 py-8 size-full">
+          <!-- nav bar -->
+          <nav
+            id="navbar"
+            class="flex justify-between items-center max-w-[1240px] mx-auto"
+          >
+            <div id="logo">
+              <img src="./assets/images/logo.png" alt="" class="" />
+            </div>
+
+            <!-- menu button -->
+            <p
+              id="menu"
+              class="font-semibold text-white underline capitalize underline-offset-2 md:hidden"
+            >
+              menu
+            </p>
+
+            <!-- nav list -->
+            <ul
+              class="hidden md:flex items-center gap-10 justify-between *:capitalize *:list-none *:text-white"
+            >
+              <li class="">home</li>
+              <li class="">products</li>
+              <li class="">why choose us</li>
+              <li class="">FAQ</li>
+              <li class="">contact us</li>
+            </ul>
+          </nav>
+
+          <!-- hero text -->
+          <div class="flex flex-col items-center justify-center h-full gap-6">
+            <h1 class="text-5xl text-center text-white capitalize">
+              where quality meets <span class="text-primary">flavor!</span>
+            </h1>
+            <p class="text-lg text-center text-white lg:w-3/5">
+              Shegoat Co brings you high-quality, fresh goat meat to your table.
+              Inspired by unique packaging trends and the desire to fill a gap
+              in the market.
+            </p>
+            <button
+              class="flex items-center gap-2 px-4 py-2 text-white capitalize rounded-full bg-primary"
+            >
+              <p>shop now</p>
+              <img src="./assets/icons/ArrowRight.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <!-- overlay -->
+        <div
+          id="overlay"
+          class="absolute inset-0"
+          style="
+            background: linear-gradient(
+              45deg,
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            );
+          "
+        ></div>
+      </section>
+
+      <!-- features -->
+      <section
+        id="features"
+        data-gjs-type="features"
+        class="gjs-block-section px-4 py-16 max-w-[1240px] mx-auto space-y-10"
+      >
+        <h1 class="text-3xl text-center capitalize">featured products</h1>
+        <div
+          class="flex flex-col w-full gap-8 md:flex-row md:items-center md:justify-center"
+        >
+          <div class="w-full space-y-6 md:max-w-80">
+            <div
+              class="w-full h-[400px] rounded-2xl"
+              style="
+                background-image: url('./assets/images/feature-1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="">
+              <p class="text-lg capitalize">product 1</p>
+              <span class="flex items-center gap-2 my-2 text-xl">
+                <p>$</p>
+                <p>30</p>
+              </span>
+
+              <button
+                class="w-full px-4 py-2 capitalize bg-transparent border border-black rounded-full"
+              >
+                <p>add to cart</p>
+              </button>
+            </div>
+          </div>
+          <div class="w-full space-y-6 md:max-w-80">
+            <div
+              class="w-full h-[400px] rounded-2xl"
+              style="
+                background-image: url('./assets/images/feature-2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="">
+              <p class="text-lg capitalize">product 1</p>
+              <span class="flex items-center gap-2 my-2 text-xl">
+                <p>$</p>
+                <p>30</p>
+              </span>
+
+              <button
+                class="w-full px-4 py-2 capitalize bg-transparent border border-black rounded-full"
+              >
+                <p>add to cart</p>
+              </button>
+            </div>
+          </div>
+          <div class="w-full space-y-6 md:max-w-80">
+            <div
+              class="w-full h-[400px] rounded-2xl"
+              style="
+                background-image: url('./assets/images/feature-3.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="">
+              <p class="text-lg capitalize">product 1</p>
+              <span class="flex items-center gap-2 my-2 text-xl">
+                <p>$</p>
+                <p>30</p>
+              </span>
+
+              <button
+                class="w-full px-4 py-2 capitalize bg-transparent border border-black rounded-full"
+              >
+                <p>add to cart</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- why choose us -->
+      <section
+        data-gjs-type="why_us"
+        id="why_us"
+        class="px-4 py-16 gjs-block-section"
+        style="
+          background-image: url('./assets/images/pattern.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div
+          class="max-w-[1240px] mx-auto bg-white rounded-xl pt-8 pb-4 px-4 lg:py-16 space-y-10"
+        >
+          <h1 class="text-3xl text-center capitalize text-[#3B1021]">
+            why choose us?
+          </h1>
+
+          <div
+            class="flex flex-col gap-4 mx-auto md:gap-8 md:flex-row lg:w-4/5"
+          >
+            <div
+              class="h-[250px] md:h-[300px] flex flex-col justify-between bg-[#FEF3F2] p-4 rounded-xl gap-2"
+            >
+              <span
+                class="flex items-center justify-center p-2 bg-white rounded-full size-10"
+              >
+                <img src="./assets/icons/category.png" alt="" />
+              </span>
+              <h2 class="text-xl capitalize text-[#3B1021]">company story</h2>
+              <p class="text-[#534949]">
+                Etiam sed vulputate nisl, lementum arcu. Vivamus dignissim
+                tortor in tellus dictum pellentesque vivamus dignissim tortor in
+                tellus dictum pellentesque...
+              </p>
+
+              <div
+                class="flex items-center gap-2 font-medium capitalize text-primary"
+              >
+                <p>learn more</p>
+                <img src="./assets/icons/ArrowRight_red.png" />
+              </div>
+            </div>
+            <div
+              class="h-[250px] md:h-[300px] flex flex-col justify-between bg-[#FEF3F2] p-4 rounded-xl gap-2"
+            >
+              <span
+                class="flex items-center justify-center p-2 bg-white rounded-full size-10"
+              >
+                <img src="./assets/icons/star.png" alt="" />
+              </span>
+              <h2 class="text-xl capitalize text-[#3B1021]">
+                commitment is quality
+              </h2>
+              <p class="text-[#534949]">
+                Etiam sed vulputate nisl, lementum arcu. Vivamus dignissim
+                tortor in tellus dictum pellentesque vivamus dignissim tortor in
+                tellus dictum pellentesque...
+              </p>
+
+              <div
+                class="flex items-center gap-2 font-medium capitalize text-primary"
+              >
+                <p>learn more</p>
+                <img src="./assets/icons/ArrowRight_red.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- textimonials -->
+      <section data-gjs-type="testimonials" class="gjs-block-section">
+        <div
+          class="max-w-[1240px] mx-auto px-4 py-14 md:px-8 flex flex-col items-center gap-4"
+        >
+          <span
+            class="flex items-center gap-2 px-2 py-1 rounded-full w-max bg-primary-light"
+          >
+            <img src="./assets/icons/sparks.svg" class="size-3" alt="" />
+            <p class="capitalize text-primary">our customers</p>
+          </span>
+
+          <h1 class="text-3xl capitalize">reviews & ratings</h1>
+
+          <div
+            class="flex flex-col items-center gap-8 mt-8 md:flex-row md:justify-between"
+          >
+            <div class="relative size-60 md:size-80">
+              <div class="absolute inset-0">
+                <div
+                  class="absolute z-10 -translate-x-1/2 -translate-y-1/2 size-28 top-1/2 left-1/2"
+                  style="
+                    background-image: url('./assets/images/Ellipse.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                >
+                  <span
+                    class="absolute flex items-center justify-center -translate-y-1/2 bg-black rounded-full -right-3 top-1/2 size-8"
+                  >
+                    <img src="./assets/icons/quote.svg" alt="" class="size-4" />
+                  </span>
+                </div>
+
+                <div
+                  class="absolute z-10 size-12 bottom-4 right-2 md:size-16"
+                  style="
+                    background-image: url('./assets/images/Ellipse-4.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div
+                  class="absolute z-10 size-12 top-4 left-2 md:size-16"
+                  style="
+                    background-image: url('./assets/images/Ellipse-3.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div
+                  class="absolute z-10 size-12 top-4 right-2 md:size-16"
+                  style="
+                    background-image: url('./assets/images/Ellipse-1.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div
+                  class="absolute z-10 size-12 bottom-4 left-2 md:size-16"
+                  style="
+                    background-image: url('./assets/images/Ellipse-2.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+
+              <div class="size-full absolute rotate-[-45deg]">
+                <span
+                  class="absolute inset-0 translate-y-2 border border-black rounded-full size-ful"
+                ></span>
+                <span
+                  class="absolute inset-0 border border-black rounded-full"
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-center gap-8 md:size-2/4 md:items-start"
+            >
+              <!-- stars rating-->
+              <span class="flex gap-2">
+                <img src="./assets/icons/rate_star.svg" alt="" class="size-5" />
+                <img src="./assets/icons/rate_star.svg" alt="" class="size-5" />
+                <img src="./assets/icons/rate_star.svg" alt="" class="size-5" />
+                <img src="./assets/icons/rate_star.svg" alt="" class="size-5" />
+                <img src="./assets/icons/rate_star.svg" alt="" class="size-5" />
+              </span>
+
+              <p class="text-center md:text-left">
+                “Es ist ein lang erwiesener Fakt, dass ein Leser vom Text
+                abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt,
+                Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die
+                normale Anordnung von Buchstaben darstellt und somit nach
+                lesbarer Sprache aussieht.”
+              </p>
+
+              <span class="flex items-center justify-between w-full">
+                <h1 class="capitalize">alexander gibson</h1>
+                <span class="flex items-center gap-4">
+                  <img src="./assets/icons/chevron.svg" alt="" class="size-3" />
+
+                  <span
+                    class="flex items-center justify-center bg-[#ED5540] size-8 rounded-full"
+                  >
+                    <img
+                      src="./assets/icons/chevron.svg"
+                      alt=""
+                      class="rotate-180 size-3"
+                    />
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section
+        data-gjs-type="gallery"
+        class="space-y-6 md:space-y-14 gjs-block-section py-14"
+      >
+        <h1 class="text-3xl text-center capitalize">As seen on Instagram</h1>
+
+        <div class="px-4 py-8 md:px-8 md:py-14 bg-primary-light">
+          <div
+            class="max-w-[1240px] mx-auto grid grid-cols-2 grid-rows-4 gap-4 h-[500px] md:h-[400px] lg:grid-cols-4 lg:grid-rows-2"
+          >
+            <div
+              class="w-full h-full col-span-1 row-span-2 rounded-lg lg:col-start-1 lg:row-span-2 lg:row-start-1"
+              style="
+                background-image: url('./assets/images/Frame 1618868646.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div
+              style="
+                background-image: url('./assets/images/Frame 1618868646-1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              "
+              alt=""
+              class="w-full h-full col-span-1 row-span-1 rounded-lg lg:grid-rows-1 lg:row-span-2"
+            ></div>
+            <div
+              style="
+                background-image: url('./assets/images/Frame 1618868716.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              "
+              alt=""
+              class="object-cover w-full h-full col-span-1 row-span-1 rounded-lg lg:rows-span-1 lg:row-start-1"
+            ></div>
+            <div
+              style="
+                background-image: url('./assets/images/Frame 1618868648.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              "
+              class="object-cover w-full h-full row-span-2 rounded-lg lg:rows-span-2"
+            ></div>
+            <div
+              style="
+                background-image: url('./assets/images/Frame 1618868649.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              "
+              class="w-full h-full row-start-3 row-end-5 rounded-lg lg:row-end-3 lg:row-start-2 lg:col-start-2"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section
+        class="px-4 py-10 gjs-block-section faq-list"
+        data-gjs-type="FAQs"
+      >
+        <h1 class="text-3xl text-center capitalize">got questions?</h1>
+        <p class="py-4 text-center">We've got answers</p>
+        <ul class="space-y-4 w-full max-w-[850px] mx-auto md:mt-4">
+          <li class="faq-item bg-grey p-4 rounded-lg font-[inter]">
+            <input type="checkbox" id="faq1" class="hidden faq-checkbox peer" />
+            <label
+              for="faq1"
+              class="flex items-center justify-between w-full bg-transparent cursor-pointer faq-label"
+            >
+              <span
+                class="md:text-[20px] text-left text-[16px] font-normal text-[#1C1C1C]"
+              >
+                Do you ship internationally?
+              </span>
+              <svg
+                class="w-4 h-4 text-gray-700 peer-checked:hidden"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M1.25 10H18.75M10 1.25V18.75"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                class="hidden w-4 h-4 text-gray-700 peer-checked:block"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 3"
+              >
+                <path
+                  d="M1.25 1.5H18.75"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </label>
+            <!-- Answer Content -->
+            <div
+              class="hidden mt-2 bg-transparent faq-content peer-checked:block"
+            >
+              <p class="leading-[20px] md:text-[18px] text-[14px] text-left">
+                Lörem ipsum homonar begulogi. Plaska dåsegulig. Betid teleledes.
+                Mikr orat speska. Ire fölår antirösk. Rest famoss..
+              </p>
+            </div>
+          </li>
+
+          <li class="faq-item bg-grey p-4 rounded-lg font-[inter]">
+            <input type="checkbox" id="faq2" class="hidden faq-checkbox peer" />
+            <label
+              for="faq2"
+              class="flex items-center justify-between w-full bg-transparent cursor-pointer faq-label"
+            >
+              <span
+                class="md:text-[20px] text-left text-[16px] font-normal text-[#1C1C1C]"
+              >
+                Do you offer custom-made designs?
+              </span>
+              <!-- + Icon (visible when not checked) -->
+              <svg
+                class="w-4 h-4 text-gray-700 peer-checked:hidden"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M1.25 10H18.75M10 1.25V18.75"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <!-- - Icon (visible when checked) -->
+              <svg
+                width="20"
+                height="3"
+                viewBox="0 0 20 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hidden w-4 h-4 text-gray-700 peer-checked:block"
+              >
+                <path
+                  d="M1.25 1.5H18.75"
+                  stroke="#4A4A4A"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </label>
+            <!-- Answer Content -->
+            <div
+              class="hidden mt-2 bg-transparent faq-content peer-checked:block"
+            >
+              <p class="leading-[20px] md:text-[18px] text-[14px] text-left">
+                Lörem ipsum homonar begulogi. Plaska dåsegulig. Betid teleledes.
+                Mikr orat speska. Ire fölår antirösk. Rest famoss..
+              </p>
+            </div>
+          </li>
+
+          <li class="faq-item bg-grey p-4 rounded-lg font-[inter]">
+            <input type="checkbox" id="faq3" class="hidden faq-checkbox peer" />
+            <label
+              for="faq3"
+              class="flex items-center justify-between w-full bg-transparent cursor-pointer faq-label"
+            >
+              <span
+                class="md:text-[20px] text-left text-[16px] font-normal text-[#1C1C1C]"
+              >
+                Do you ship internationally?
+              </span>
+              <svg
+                class="w-4 h-4 text-gray-700 peer-checked:hidden"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M1.25 10H18.75M10 1.25V18.75"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                class="hidden w-4 h-4 text-gray-700 peer-checked:block"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 3"
+              >
+                <path
+                  d="M1.25 1.5H18.75"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </label>
+            <!-- Answer Content -->
+            <div
+              class="hidden mt-2 bg-transparent faq-content peer-checked:block"
+            >
+              <p class="leading-[20px] md:text-[18px] text-[14px] text-left">
+                Lörem ipsum homonar begulogi. Plaska dåsegulig. Betid teleledes.
+                Mikr orat speska. Ire fölår antirösk. Rest famoss..
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- contact us -->
+      <section
+        id="contact"
+        data-gjs-type="contact"
+        class="px-4 py-16 gjs-block-section"
+      >
+        <div
+          class="max-w-[1240px] mx-auto flex flex-col md:flex-row md:justify-between gap-8 md:gap-14"
+        >
+          <div class="space-y-4 md:w-1/2 md:space-y-10">
+            <h1 class="text-3xl capitalize">contact us</h1>
+            <p class="text-[#515151]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              laudantium iste in maxime accusamus animi repellat dolor numquam
+              nesciunt tempore.
+            </p>
+            <span class="block">
+              <h2 class="text-lg capitalize">our email</h2>
+              <p class="text-[#515151]">shegoatco@gmail.com</p>
+            </span>
+            <span class="block">
+              <h2 class="text-lg capitalize">our number</h2>
+              <p class="text-[#515151]">+111 000 0000 0000</p>
+            </span>
+            <span class="flex flex-col gap-2">
+              <h2 class="text-lg capitalize">our socials</h2>
+              <div class="space-y-2">
+                <span class="flex items-center gap-2">
+                  <img src="./assets/icons/Vector.png" alt="" />
+                  <p class="capitalize underline text-[#515151]">instagram</p>
+                </span>
+                <span class="flex items-center gap-2">
+                  <img src="./assets/icons/Vector-1.png" alt="" />
+                  <p class="capitalize underline text-[#515151]">facebook</p>
+                </span>
+                <span class="flex items-center gap-2">
+                  <img src="./assets/icons/Vector-2.png" alt="" />
+                  <p class="capitalize underline text-[#515151]">twitter</p>
+                </span>
+              </div>
+            </span>
+          </div>
+          <form action="" class="space-y-4 md:space-y-10 md:w-1/2">
+            <div class="space-y-2">
+              <label for="name" class="capitalize">name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block w-full h-10 px-2 border border-black rounded-lg outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="space-y-2">
+              <label for="email" class="capitalize">email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="block w-full h-10 px-2 border border-black rounded-lg outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="space-y-2">
+              <label for="message" class="capitalize">message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                class="block w-full p-2 border border-black rounded-lg outline-none resize-none focus:ring-primary focus:ring-1 focus:border-primary"
+              ></textarea>
+            </div>
+            <button
+              class="w-full px-4 py-2 text-white capitalize rounded-full bg-primary"
+            >
+              <p>submit</p>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <section
+        id="footer"
+        data-gjs-type="footer"
+        class="px-4 bg-black gjs-block-section py-14 md:px-8"
+      >
+        <div class="max-w-[1240px] mx-auto">
+          <div
+            class="flex flex-col gap-8 md:flex-row items-center md:items-start *:text-center *:md:text-left justify-between"
+          >
+            <div class="md:w-1/3">
+              <h1 class="text-3xl uppercase text-primary">shegoatco</h1>
+              <p class="text-white">Where quality meets flavor.</p>
+            </div>
+
+            <div
+              class="flex flex-col justify-between gap-8 md:flex-row md:w-2/3"
+            >
+              <div class="space-y-4 text-white">
+                <h1 class="text-lg capitalize">important links</h1>
+                <nav class="flex flex-col gap-2 capitalize *:opacity-80">
+                  <a href="#" class="">home</a>
+                  <a href="#">products</a>
+                  <a href="#">why choose us</a>
+                  <a href="#">FAQs</a>
+                </nav>
+              </div>
+
+              <div class="space-y-4 text-white">
+                <h1 class="text-lg capitalize">contact us</h1>
+                <nav class="flex flex-col gap-2 capitalize *:opacity-80">
+                  <a href="#" class="">call: (237) 987-654-321</a>
+                  <a href="#">email: findus@gmail.com</a>
+                  <a href="#">address: 5th avenue, saint charles</a>
+                </nav>
+              </div>
+
+              <div class="space-y-4 text-white">
+                <h1 class="text-lg capitalize">more</h1>
+                <nav class="flex flex-col gap-2 capitalize *:opacity-80">
+                  <a href="#">terms of service</a>
+                  <a href="#">track order</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <hr class="my-8 border-primary" />
+          <div
+            class="flex flex-col items-center justify-between gap-4 text-white capitalize md:flex-row-reverse md:items-start"
+          >
+            <div class="flex items-center gap-4">
+              <img src="./assets/icons/social1.svg" alt="" />
+              <img src="./assets/icons/social2.svg" alt="" />
+              <img src="./assets/icons/social3.svg" alt="" />
+            </div>
+            <p>&copy; 2024 SheGoatCo. all rights reserved.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

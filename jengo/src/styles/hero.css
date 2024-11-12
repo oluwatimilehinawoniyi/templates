@@ -1,0 +1,82 @@
+#jengo_hero {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url("/template_one/assets/jengo_hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#jengo_hero_container {
+  padding: 1rem;
+  max-width: 1130px;
+  margin: auto;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#jengo_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#jengo_navbar_menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+#jengo_navbar_menu img {
+  width: 25px;
+}
+
+#jengo_navbar_menu p {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#jengo_navbar_menu:hover p {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#jengo_hero_text_container {
+  padding-bottom: 6rem;
+}
+
+#jengo_hero_text {
+  width: 80%;
+
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+#jengo_hero_cta {
+  width: max-content;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+}
+
+#jengo_hero_cta p {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#jengo_hero_cta img {
+  transform: translateX(-5px);
+  transition: transform 0.3s linear;
+}
+
+#jengo_hero_cta:hover img {
+  transform: translateX(0px);
+}

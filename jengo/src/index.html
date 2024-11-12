@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/template_one/assets/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Home</title>
+  </head>
+  <body class="bg-[#FFF9F3]">
+    <!-- hero -->
+    <section
+      class="h-screen gjs-block-section"
+      style="
+        background-image: url('./assets/jengo_hero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <section class="flex flex-col justify-between h-full px-4 py-6">
+        <section
+          data-gjs-type="navbar"
+          id="jengo_navbar"
+          class="max-w-[1130px] mx-auto w-full flex justify-between gjs-block-section"
+        >
+          <div class="" id="jengo_navbar_logo">
+            <img src="./assets/logo.svg" alt="logo" id="jengo_logo" />
+          </div>
+
+          <div
+            id="jengo_navbar_menu"
+            class="flex items-center gap-4 cursor-pointer group"
+          >
+            <img
+              src="./assets/icons/menuIcon.svg"
+              alt="menu icon"
+              id="jengo_logo"
+              class="size-5"
+            />
+            <p
+              class="text-xl text-white capitalize group-hover:underline underline-offset-2"
+            >
+              menu
+            </p>
+          </div>
+        </section>
+
+        <section
+          data-gjs-type="hero"
+          class="max-w-[1130px] mx-auto flex flex-col gap-8 pb-10 md:pb-14 lg:pb-32"
+        >
+          <h1
+            class="text-white uppercase lg:text-7xl font-bold lg:w-[90%] text-4xl md:text-6xl"
+          >
+            we design and develop sustainable energy solutions for businesses.
+          </h1>
+          <div
+            id="jengo_hero_cta"
+            class="flex items-center gap-4 text-white cursor-pointer w-max group"
+          >
+            <p class="text-xl underline-offset-2 group-hover:underline">
+              Get in touch
+            </p>
+            <img
+              src="./assets/icons/arrowRight.svg"
+              alt="arrow icon"
+              class="duration-300 ease-linear group-hover:translate-x-2"
+            />
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- about -->
+    <section
+      data-gjs-type="about"
+      class="gjs-block-section pt-20 md:pb-10 lg:pt-40 lg:pb-20 p-4 max-w-[1130px] mx-auto"
+    >
+      <div class="flex flex-col items-center space-y-8 md:items-start">
+        <p
+          class="w-full text-center md:text-left text-2xl md:text-4xl md:max-w-[85%]"
+        >
+          At Acentis, we provide innovative energy consulting solutions that
+          empower businesses to thrive sustainably. Our experts specialize in
+          energy management, renewable integration, and regulatory compliance,
+          helping clients navigate the energy landscape for greater efficiency
+          and a greener future.
+        </p>
+        <span id="jengo_about_cta" class="flex items-center gap-4 group">
+          <a
+            href="./about.html"
+            class="text-xl underline-offset-2 group-hover:underline"
+            >About us</a
+          >
+          <img
+            src="./assets/icons/arrowRightBlack.svg"
+            alt="arrow icon"
+            class="duration-300 ease-linear group-hover:translate-x-2"
+          />
+        </span>
+      </div>
+    </section>
+
+    <!-- social / partners -->
+    <section
+      data-gjs-type="socials"
+      class="max-w-[1130px] px-4 mx-auto py-8 md:py-10 lg:pt-24"
+    >
+      <div
+        class="flex flex-wrap items-center justify-center w-full gap-8 lg:justify-between"
+      >
+        <img src="./assets/partner/partner-3.png" alt="" class="w-14 lg:w-20" />
+        <img src="./assets/partner/partner-1.png" alt="" class="w-14 lg:w-20" />
+        <img src="./assets/partner/partner-2.png" alt="" class="w-14 lg:w-20" />
+        <img src="./assets/partner/partner-4.png" alt="" class="w-8 lg:w-12" />
+        <img src="./assets/partner/partner-5.png" alt="" class="w-14 lg:w-20" />
+        <img src="./assets/partner/partner-6.png" alt="" class="w-14 lg:w-20" />
+      </div>
+    </section>
+
+    <!-- feature -->
+    <section
+      data-gjs-type="features"
+      class="max-w-[1130px] px-4 mx-auto py-8 md:py-10 lg:py-14"
+    >
+      <section class="space-y-10">
+        <h1
+          class="text-4xl font-bold text-center uppercase md:text-left md:text-7xl"
+        >
+          here's what <br />
+          we offer
+        </h1>
+        <ul class="flex flex-col">
+          <li
+            class="flex items-center justify-between gap-1.5 cursor-pointer py-4 border-t group"
+          >
+            <p class="text-xl font-semibold uppercase md:text-2xl">
+              energy management consulting
+            </p>
+            <img
+              src="./assets/icons/longArrow.svg"
+              alt="long arrow icon"
+              class="h-5 transition-transform duration-300 ease-linear group-hover:-rotate-45"
+            />
+          </li>
+          <li
+            class="flex items-center justify-between gap-1.5 cursor-pointer py-4 border-t group"
+          >
+            <p class="text-xl font-semibold uppercase md:text-2xl">
+              regulatory compliance support
+            </p>
+            <img
+              src="./assets/icons/longArrow.svg"
+              alt="long arrow icon"
+              class="h-5 transition-transform duration-300 ease-linear group-hover:-rotate-45"
+            />
+          </li>
+          <li
+            class="flex items-center justify-between gap-1.5 cursor-pointer py-4 border-t group"
+          >
+            <p class="text-xl font-semibold uppercase md:text-2xl">
+              energy audits and assessments
+            </p>
+            <img
+              src="./assets/icons/longArrow.svg"
+              alt="long arrow icon"
+              class="h-5 transition-transform duration-300 ease-linear group-hover:-rotate-45"
+            />
+          </li>
+          <li
+            class="flex items-center justify-between gap-1.5 cursor-pointer py-4 border-y group"
+          >
+            <p class="text-xl font-semibold uppercase md:text-2xl">
+              sustainability strategy development
+            </p>
+            <img
+              src="./assets/icons/longArrow.svg"
+              alt="long arrow icon"
+              class="h-5 transition-transform duration-300 ease-linear group-hover:-rotate-45"
+            />
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- feature two -->
+    <section
+      data-gjs-type="features"
+      class="max-w-[700px] px-4 mx-auto space-y-10 py-8 md:py-10 lg:py-14"
+    >
+      <h1
+        class="text-4xl font-bold text-center uppercase md:text-left md:text-7xl"
+      >
+        how we <br />
+        work
+      </h1>
+      <ul class="flex flex-col">
+        <li class="flex flex-col items-center gap-8 py-6 border-t md:flex-row">
+          <span
+            class="grid text-2xl text-white bg-black rounded-full size-10 md:size-12 place-items-center"
+          >
+            <p>1</p>
+          </span>
+          <span
+            class="flex flex-col w-full md:w-4/5 gap-2 *:text-center *:md:text-left"
+          >
+            <h2 class="text-xl font-semibold uppercase md:text-2xl">
+              discovery
+            </h2>
+            <p class="text-lg md:text-xl">
+              We begin by understanding your business goals and energy needs
+              through comprehensive assessments and stakeholder interviews. This
+              phase allows us to identify opportunities for improvement and
+              tailor our approach.
+            </p>
+          </span>
+        </li>
+        <li class="flex flex-col items-center gap-8 py-6 border-t md:flex-row">
+          <span
+            class="grid text-2xl text-white bg-black rounded-full size-10 md:size-12 place-items-center"
+          >
+            <p>2</p>
+          </span>
+          <span
+            class="flex flex-col w-full md:w-4/5 gap-2 *:text-center *:md:text-left"
+          >
+            <h2 class="text-xl font-semibold uppercase md:text-2xl">
+              conceptualization
+            </h2>
+            <p class="text-lg md:text-xl">
+              Based on our findings, we develop innovative energy solutions and
+              strategies that align with your objectives. This phase includes
+              designing actionable plans that incorporate renewable energy
+              integration and efficiency enhancements.
+            </p>
+          </span>
+        </li>
+        <li class="flex flex-col items-center gap-8 py-6 border-t md:flex-row">
+          <span
+            class="grid text-2xl text-white bg-black rounded-full size-10 md:size-12 place-items-center"
+          >
+            <p>3</p>
+          </span>
+          <span
+            class="flex flex-col w-full md:w-4/5 gap-2 *:text-center *:md:text-left"
+          >
+            <h2 class="text-xl font-semibold uppercase md:text-2xl">handoff</h2>
+            <p class="text-lg md:text-xl">
+              Once the strategies are finalized, we ensure a seamless transition
+              by providing detailed documentation, training, and support. Our
+              team collaborates with your staff to implement the solutions
+              effectively and monitor progress for long-term success.
+            </p>
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- case studies -->
+    <section
+      data-gjs-type="case_studies"
+      class="max-w-[1130px] mx-auto px-4 py-8 md:py-10 lg:py-14"
+    >
+      <h1
+        class="mb-10 text-4xl font-bold text-center uppercase md:text-7xl md:mb-24"
+      >
+        case studies
+      </h1>
+
+      <ul class="flex items-start gap-8 pb-2 overflow-x-scroll">
+        <li class="min-w-full md:min-w-[450px] h-auto space-y-4">
+          <div
+            style="
+              background-image: url('./assets/case studies/case1.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+            alt=""
+            class="w-full h-[350px] object-cover"
+          ></div>
+          <p class="opacity-50">Energy Soutions in Action</p>
+          <p class="md:text-xl">
+            Green Future Energy Corp. sought to implement solar colutions to
+            reduce energy costs. We designed a custom solar energy system that
+            resulted in a 50% decrease in electricity expenses and enhanced
+            their sustainability profile within the first year.
+          </p>
+          <p class="font-medium opacity-55">Green Future Energy Corp.</p>
+        </li>
+        <li class="min-w-full md:min-w-[450px] h-auto space-y-4">
+          <div
+            style="
+              background-image: url('./assets/case studies/case2.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+            alt=""
+            class="w-full h-[350px] object-cover"
+          ></div>
+          <p class="opacity-50">
+            Transforming Energy Efficiency and Sustainability
+          </p>
+          <p class="md:text-xl">
+            Eco Innovations Ltd. sought to lower its carbon footprint. We
+            designed a solar installation plan, enabling a shift to 60%
+            renewable energy and cutting greenhouse gas emissions by 40%.
+          </p>
+          <p class="font-medium opacity-55">Eco Innovations Ltd.</p>
+        </li>
+        <li class="min-w-full md:min-w-[450px] h-auto space-y-4">
+          <div
+            style="
+              background-image: url('./assets/case studies/case3.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+            alt=""
+            class="w-full h-[350px] object-cover"
+          ></div>
+          <p class="opacity-50">Empowering Sustainable Practices</p>
+          <p class="md:text-xl">
+            Future Farms aimed to reduce its environmental impact while
+            maintaining productivity. We assessed their energy usage and
+            implemented energy-efficient irrigation and renewable energy
+            systems, achieving a 35% reduction in energy costs and a 50%
+            decrease in water usage, boosting sustainability and crop yield.
+          </p>
+          <p class="font-medium opacity-55">Future Farms Agricultural Group</p>
+        </li>
+        <li class="min-w-full md:min-w-[450px] h-auto space-y-4">
+          <div
+            style="
+              background-image: url('./assets/case studies/case1.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+            alt=""
+            class="w-full h-[350px] object-cover"
+          ></div>
+          <p class="opacity-50">Energy Soutions in Action</p>
+          <p class="md:text-xl">
+            Green Future Energy Corp. sought to implement solar colutions to
+            reduce energy costs. We designed a custom solar energy system that
+            resulted in a 50% decrease in electricity expenses and enhanced
+            their sustainability profile within the first year.
+          </p>
+          <p class="font-medium opacity-55">Green Future Energy Corp.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- testimonial -->
+    <section
+      data-gjs-type="testimonial"
+      class="max-w-[700px] mx-auto px-4 py-8 md:py-14"
+    >
+      <h1 class="mb-16 text-4xl font-bold text-center uppercase md:text-7xl">
+        what our <br />
+        clients say
+      </h1>
+
+      <div class="">
+        <p class="font-medium capitalize opacity-50">EcoTech Manufacturing</p>
+        <p class="my-6 text-xl">
+          "Acentis transformed our approach to energy management. Their
+          expertise helped us integrate renewable solutions that reduced our
+          costs and carbon footprint significantly. We couldn't be happier with
+          the results!"
+        </p>
+
+        <h1 class="text-xl font-bold uppercase">sarah johnson</h1>
+        <p class="capitalize opacity-50">operations manager</p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section data-gjs-type="testimonial" class="px-4 py-8 border-t md:py-14">
+      <div
+        class="max-w-[1130px] mx-auto flex flex-col md:flex-row items-start gap-8"
+      >
+        <div class="w-full md:w-2/5">
+          <h1
+            class="mb-4 text-4xl font-bold text-center uppercase md:text-5xl md:text-left"
+          >
+            get in touch <br />
+            with us!
+            <!-- <img
+            src="./assets/icons/longArrow.svg"
+            alt="long arrow icon"
+            class="h-5 transition-transform duration-300 ease-linear group-hover:-rotate-45"
+          /> -->
+          </h1>
+          <p class="text-lg text-center md:text-xl md:text-left">
+            We’d love to hear from you! Contact us today with any questions or
+            to discuss how we can support your energy needs and create
+            sustainable solutions for your business.
+          </p>
+        </div>
+        <ul
+          class="w-full md:w-3/5 grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-8 *:cursor-pointer"
+        >
+          <li
+            class="text-xl font-bold text-center underline uppercase md:text-left md:text-2xl"
+          >
+            regulatory compliance support
+          </li>
+          <li
+            class="text-xl font-bold text-center underline uppercase md:text-left md:text-2xl"
+          >
+            renewable energy integration
+          </li>
+          <li
+            class="text-xl font-bold text-center underline uppercase md:text-left md:text-2xl"
+          >
+            energy audits and assessments
+          </li>
+          <li
+            class="text-xl font-bold text-center underline uppercase md:text-left md:text-2xl"
+          >
+            sustainability strategy development
+          </li>
+          <li
+            class="text-xl font-bold text-center underline uppercase md:text-left md:text-2xl"
+          >
+            energy management consulting
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
