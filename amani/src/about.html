@@ -3,7 +3,256 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
     <title>Amani | About</title>
   </head>
-  <body></body>
+  <body>
+    <!-- NAVBAR -->
+    <section
+      data-gjs-type="navbar"
+      id="navbar"
+      class="gjs-block-section bg-amaniGrey"
+    >
+      <div class="max-w-[1240px] p-4 mx-auto flex items-center justify-between">
+        <div class="">
+          <h1 class="font-lora text-2xl font-semibold">Amani</h1>
+        </div>
+        <div class="flex items-center gap-8 md:gap-14">
+          <nav class="hidden md:flex items-center gap-10">
+            <a href="./index.html" class="capitalize font-work-sans">home</a>
+            <a href="./about.html" class="capitalize font-work-sans"
+              >about us</a
+            >
+            <a href="" class="capitalize font-work-sans">classes</a>
+            <a href="" class="capitalize font-work-sans">contacts</a>
+          </nav>
+          <button
+            class="font-work-sans bg-black text-white capitalize px-2.5 h-10 w-28"
+          >
+            sign up
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section
+      data-gjs-type="hero"
+      id="hero"
+      class="gjs-block-section h-[calc(100vh-80px)] py-8 md:py-16 bg-amaniGrey"
+    >
+      <div
+        class="max-w-[1240px] mx-auto px-4 py-8 flex flex-col gap-8 lg:gap-14 items-center justify-between h-full"
+      >
+        <!-- hero text -->
+        <h1
+          class="font-lora uppercase text-center text-3xl md:text-[50px] leading-10 md:leading-[52px] lg:w-3/5"
+        >
+          discover Amani - your sanctuary of peace and wellness
+        </h1>
+
+        <span class="flex items-center flex-col gap-2 cursor-pointer w-max">
+          <p class="capitalize">
+            scroll <br />
+            down
+          </p>
+          <img
+            src="./assets/images/arrowDown.png"
+            alt="arrow icon"
+            class="h-10"
+          />
+        </span>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section
+      data-gjs-type="about"
+      id="about"
+      class="gjs-block-section h-auto py-8 md:py-16 bg-white"
+    >
+      <div
+        class="max-w-[1240px] mx-auto px-4 flex flex-col md:flex-row gap-8 items-center lg:gap-14 lg:grid lg:grid-cols-3 lg:grid-rows-4"
+      >
+        <div
+          class="w-full h-52 flex-1 lg:h-full lg:row-span-3 lg:col-start-1 lg:col-span-1"
+          style="
+            background-image: url('./assets/images/about-1.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        ></div>
+        <p
+          class="text-center font-work-sans flex-1 lg:col-start-2 lg:row-span-1 lg:row-start-2"
+        >
+          At Amani, we see yoga as a journey of self-discovery, balance, and
+          growth. Our welcoming space fosters mindfulness, inclusivity, and
+          inner peace, guiding each individual toward harmony in both body and
+          mind.
+        </p>
+        <div
+          class="w-full h-52 flex-1 lg:h[500px] lg:col-start-3 lg:h-full lg:row-span-3 lg:row-start-2"
+          style="
+            background-image: url('./assets/images/about-2.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        ></div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY SECTION-->
+    <section
+      data-gjs-type="philosophy"
+      id="philosophy"
+      class="gjs-block-section h-auto py-8 md:py-16 bg-amaniGrey px-4 space-y-4 md:space-y-8 flex flex-col items-center"
+    >
+      <h1 class="font-lora uppercase text-2xl md:text-4xl text-center">
+        our philosophy
+      </h1>
+      <p class="font-work-sans text-center md:w-4/5 lg:w-2/5">
+        Yoga is more than physical practice; it’s a pathway to harmony within.
+        Through mindfulness, movement, and community, we empower you to connect
+        deeply with yourself
+      </p>
+    </section>
+
+    <!-- SOCIAL/MOMENTS SECTION -->
+    <section
+      data-gjs-type="social"
+      id="social"
+      class="gjs-block-section h-auto py-8 md:py-16 bg-white"
+    >
+      <div
+        class="max-w-[1240px] mx-auto px-4 flex flex-col items-center gap-4 md:gap-8"
+      >
+        <h1 class="font-lora uppercase text-2xl md:text-4xl text-center">
+          moments at amani
+        </h1>
+
+        <div
+          class="grid grid-cols-2 grid-rows-3 md:grid-cols-4 md:grid-rows-2 gap-4 w-full md:gap-8"
+        >
+          <div
+            class="w-full h-48 md:h-full col-span-2 md:row-span-2"
+            style="
+              background-image: url('./assets/images/about-2.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="w-full h-48"
+            style="
+              background-image: url('./assets/images/instagram-8.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="w-full h-48"
+            style="
+              background-image: url('./assets/images/instagram-6.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="w-full h-48"
+            style="
+              background-image: url('./assets/images/instagram-7.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="w-full h-48"
+            style="
+              background-image: url('./assets/images/instagram-5.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section
+      data-gjs-type="cta"
+      id="cta"
+      class="gjs-block-section h-auto py-8 md:py-16 bg-amaniGrey px-4 space-y-4 md:space-y-8 flex flex-col items-center"
+    >
+      <h1 class="font-lora uppercase text-2xl md:text-4xl text-center">
+        let's get <br class="" />
+        you started
+      </h1>
+      <p class="font-work-sans text-center md:w-4/5 lg:w-2/5">
+        Join us and discover the benefits of yoga in a peaceful and inspiring
+        environment
+      </p>
+
+      <button
+        class="font-work-sans bg-black text-white capitalize px-2.5 h-10 w-28"
+      >
+        select plan
+      </button>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section data-gjs-type="footer" id="footer" class="bg-black">
+      <div
+        class="max-w-[1240px] mx-auto px-4 flex flex-col items-center justify-between md:h-72 gap-8 py-8 md:pt-16"
+      >
+        <div
+          class="w-full flex flex-col md:flex-row justify-between items-start gap-8"
+        >
+          <div
+            class="w-full md:w-max space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
+          >
+            <h1 class="capitalize font-lora text-lg">contacts</h1>
+            <p class="capitalize font-work-sans">amaniyoga@gmail.com</p>
+            <div class="flex items-center gap-4">
+              <img src="./assets/images/instagram.png" alt="instagram icon" />
+              <img src="./assets/images/twitter.png" alt="twitter icon" />
+              <img src="./assets/images/telegram.png" alt="telegram icon" />
+              <img src="./assets/images/facebook.png" alt="facebook icon" />
+            </div>
+          </div>
+          <div
+            class="w-full md:w-max space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
+          >
+            <h1 class="capitalize font-lora text-lg">address</h1>
+            <p class="capitalize font-work-sans">
+              107th St. Bluffon, CA 90303, USA
+            </p>
+            <p class="capitalize font-work-sans">+123 456 789</p>
+          </div>
+          <div
+            class="w-full md:w-max space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
+          >
+            <h1 class="capitalize font-lora text-lg">information</h1>
+            <p class="capitalize font-work-sans">private policy</p>
+            <p class="capitalize font-work-sans">contract offer</p>
+          </div>
+        </div>
+        <p class="capitalize text-white text-sm text-center">
+          2023 &copy;Amani. all rights reserved
+        </p>
+      </div>
+    </section>
+  </body>
 </html>

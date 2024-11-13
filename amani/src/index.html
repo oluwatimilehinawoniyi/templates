@@ -24,15 +24,17 @@
         <div class="">
           <h1 class="font-lora text-2xl font-semibold">Amani</h1>
         </div>
-        <div class="flex items-center gap-8">
-          <nav class="hidden md:flex items-center gap-4">
-            <a href="" class="capitalize font-work-sans">home</a>
-            <a href="" class="capitalize font-work-sans">about us</a>
+        <div class="flex items-center gap-8 md:gap-14">
+          <nav class="hidden md:flex items-center gap-10">
+            <a href="./index.html" class="capitalize font-work-sans">home</a>
+            <a href="./about.html" class="capitalize font-work-sans"
+              >about us</a
+            >
             <a href="" class="capitalize font-work-sans">classes</a>
             <a href="" class="capitalize font-work-sans">contacts</a>
           </nav>
           <button
-            class="font-work-sans bg-black text-white capitalize rounded-2xl px-2.5 h-10 w-28"
+            class="font-work-sans bg-black text-white capitalize px-2.5 h-10 w-28"
           >
             sign up
           </button>
@@ -44,13 +46,13 @@
     <section
       data-gjs-type="hero"
       id="hero"
-      class="gjs-block-section h-auto py-8 bg-amaniGrey"
+      class="gjs-block-section h-auto py-8 md:py-16 bg-amaniGrey"
     >
       <div
-        class="max-w-[1240px] mx-auto px-4 flex flex-col gap-8 lg:flex-row md:justify-between"
+        class="max-w-[1240px] mx-auto px-4 py-8 flex flex-col gap-8 lg:gap-14 lg:flex-row md:justify-between lg:items-center"
       >
         <!-- hero text -->
-        <div class="flex flex-col gap-4 items-center lg:items-start lg:w-2/5">
+        <div class="flex flex-col gap-4 items-center lg:items-start lg:w-3/5">
           <h1
             class="font-lora uppercase text-center lg:text-left text-3xl md:text-[50px] leading-10 md:leading-[52px]"
           >
@@ -75,7 +77,7 @@
 
         <!-- hero image -->
         <div
-          class="w-full h-[325px] lg:w-1/2 md:h-[350px]"
+          class="w-full h-[325px] lg:w-2/5 md:h-[350px]"
           style="
             background-image: url('./assets/images/hero.png');
             background-position: bottom;
@@ -90,7 +92,7 @@
     <section
       data-gjs-type="features"
       id="features"
-      class="gjs-block-section h-auto py-8 bg-white"
+      class="gjs-block-section h-auto py-8 md:py-16 bg-white"
     >
       <div
         class="max-w-[1240px] mx-auto px-4 flex flex-col items-center gap-4 md:items-start"
@@ -100,7 +102,7 @@
         >
           our classes
         </h1>
-        <p class="font-work-sans text-center md:text-left md:w-4/5">
+        <p class="font-work-sans text-center md:text-left md:w-4/5 lg:w-3/5">
           Our classes generally include a blend of physical postures,
           breathwork, and meditation, all aimed at building strength, increasing
           flexibility, relieving stress, and supporting overall well-being. With
@@ -108,10 +110,12 @@
           guidance from a qualified instructor when beginning any new practice.
         </p>
 
-        <div class="w-full flex flex-col md:flex-row gap-4">
-          <div class="flex flex-col items-center gap-4 w-full mt-6 md:order-1">
+        <div class="w-full flex flex-col md:flex-row gap-4 md:gap-8">
+          <div
+            class="flex flex-col items-center gap-4 w-full mt-6 md:order-1 lg:flex-1"
+          >
             <div
-              class="w-full h-[300px]"
+              class="w-full h-[300px] lg:h-[400px]"
               style="
                 background-image: url('./assets/images/class-1.png');
                 background-position: center;
@@ -121,9 +125,11 @@
             ></div>
             <h1 class="font-lora capitalize">yoga for beginners</h1>
           </div>
-          <div class="flex flex-col items-center gap-4 w-full mt-6 md:order-3">
+          <div
+            class="flex flex-col items-center gap-4 w-full mt-6 md:order-3 lg:flex-1"
+          >
             <div
-              class="w-full h-[300px]"
+              class="w-full h-[300px] lg:h-[400px]"
               style="
                 background-image: url('./assets/images/class-3.png');
                 background-position: center left;
@@ -133,9 +139,11 @@
             ></div>
             <h1 class="font-lora capitalize">3 weeks yoga workout</h1>
           </div>
-          <div class="flex flex-col items-center gap-4 w-full mt-6 md:order-2">
+          <div
+            class="flex flex-col items-center gap-4 w-full mt-6 md:order-2 lg:flex-1"
+          >
             <div
-              class="w-full h-[300px] md:h-[225px]"
+              class="w-full h-[300px] md:h-[225px] lg:h-[280px]"
               style="
                 background-image: url('./assets/images/class-2.png');
                 background-position: center;
@@ -153,25 +161,25 @@
     <section
       id="schedule"
       data-gjs-type="schedule"
-      class="gjs-block-section h-auto py-8 bg-amaniGrey"
+      class="gjs-block-section h-auto py-8 md:py-16 bg-amaniGrey"
     >
-      <div class="px-4 flex flex-col gap-4">
+      <div class="px-4 max-w-[1240px] mx-auto flex flex-col gap-4">
         <h1
           class="font-lora uppercase text-2xl text-center md:text-left md:text-4xl"
         >
           classes for every <br />
           level and need
         </h1>
-        <p class="font-work-sans text-center md:text-left md:w-4/5">
+        <p class="font-work-sans text-center md:text-left md:w-4/5 lg:w-3/5">
           Whether you’re a beginner or a seasoned yogi, whether you're looking
           for a moment of peace or aiming to perfect your headstand, we have
           options to suit your needs and schedule.
         </p>
 
         <div
-          class="flex flex-col md:flex-row md:gap-8 md:justify-between gap-4 md:mt-6"
+          class="flex flex-col md:flex-row md:justify-between gap-4 md:mt-6 md:gap-10"
         >
-          <table class="md:w-3/5">
+          <table class="md:w-3/5 lg:w-1/2">
             <tr
               class="*:font-lora *:font-normal border-y-2 border-black *:text-left"
             >
@@ -230,7 +238,7 @@
             </tr>
           </table>
           <div
-            class="w-full h-[300px] md:w-2/5"
+            class="w-full h-[300px] lg:h-[350px] md:w-2/5 lg:w-1/2"
             style="
               background-image: url('./assets/images/schedule.png');
               background-position: center;
@@ -246,7 +254,7 @@
     <section
       id="pricing"
       data-gjs-type="pricing"
-      class="gjs-block-section h-auto py-8 bg-white"
+      class="gjs-block-section h-auto py-8 md:py-16 bg-white"
     >
       <div class="max-w-[1240px] mx-auto px-4 flex flex-col gap-4">
         <h1
@@ -256,32 +264,45 @@
           that suits your needs
         </h1>
 
-        <p class="font-work-sans text-center md:text-left">
+        <p class="font-work-sans text-center md:text-left md:w-4/5 lg:w-3/5">
           Discover our range of membership options designed to accommodate every
           level and lifestyle. Whether you want unlimited classes, occasional
           drop-ins, or something in between, we have the perfect fit for you.
           Your journey starts here!
         </p>
 
-        <div class="flex flex-col md:flex-row gap-6 md:mt-6">
-          <div class="bg-black p-4 space-y-4 md:flex-1">
+        <div
+          class="flex flex-col items-start md:flex-row gap-4 md:gap-8 md:mt-6"
+        >
+          <div
+            class="bg-black p-4 lg:p-8 space-y-4 md:flex-1 flex flex-col justify-between md:min-h-[300px]"
+          >
             <h1 class="uppercase font-lora text-white text-center text-2xl">
               essential flow
             </h1>
+
             <ul class="*:text-white *:text-center *:capitalize *:text-sm">
               <li>5 drop-in classes</li>
               <li>Valid for 3 months</li>
               <li>Access to beginner-level classes</li>
             </ul>
-
-            <p class="text-center capitalize text-3xl text-white">free</p>
-            <button
-              class="font-work-sans text-black bg-white capitalize px-2.5 h-10 w-full"
-            >
-              join the class
-            </button>
+            <div class="space-y-4">
+              <div
+                class="text-center capitalize text-3xl text-white flex items-center justify-center"
+              >
+                <p id="currency">$</p>
+                <p id="value">0</p>
+              </div>
+              <button
+                class="font-work-sans text-black bg-white capitalize px-2.5 h-10 w-full"
+              >
+                join the class
+              </button>
+            </div>
           </div>
-          <div class="bg-black p-4 space-y-4 md:flex-1">
+          <div
+            class="bg-black p-4 lg:p-8 flex flex-col justify-between space-y-4 md:flex-1 md:min-h-[300px]"
+          >
             <h1 class="uppercase font-lora text-white text-center text-2xl">
               balanced journey
             </h1>
@@ -291,20 +312,23 @@
               <li>Access to all-level classes</li>
               <li>1 free mindfulness workshop</li>
             </ul>
-
-            <div
-              class="text-center capitalize text-3xl text-white flex items-center justify-center"
-            >
-              <p>$</p>
-              <p>70</p>
+            <div class="space-y-4">
+              <div
+                class="text-center capitalize text-3xl text-white flex items-center justify-center"
+              >
+                <p id="currency">$</p>
+                <p id="value">70</p>
+              </div>
+              <button
+                class="font-work-sans text-black bg-white capitalize px-2.5 h-10 w-full"
+              >
+                join the class
+              </button>
             </div>
-            <button
-              class="font-work-sans text-black bg-white capitalize px-2.5 h-10 w-full"
-            >
-              join the class
-            </button>
           </div>
-          <div class="bg-black p-4 space-y-4 md:flex-1">
+          <div
+            class="bg-black p-4 lg:p-8 flex flex-col justify-between space-y-4 md:flex-1 md:min-h-[300px]"
+          >
             <h1 class="uppercase font-lora text-white text-center text-2xl">
               elevated experience
             </h1>
@@ -314,18 +338,19 @@
               <li>free weekend retreats</li>
               <li>15% merchandise discount</li>
             </ul>
-
-            <div
-              class="text-center capitalize text-3xl text-white flex items-center justify-center"
-            >
-              <p>$</p>
-              <p>150</p>
+            <div class="space-y-4">
+              <div
+                class="text-center capitalize text-3xl text-white flex items-center justify-center"
+              >
+                <p id="currency">$</p>
+                <p id="value">150</p>
+              </div>
+              <button
+                class="font-work-sans text-black bg-white capitalize px-2.5 h-10 w-full"
+              >
+                join the class
+              </button>
             </div>
-            <button
-              class="font-work-sans text-black bg-white capitalize px-2.5 h-10 w-full"
-            >
-              join the class
-            </button>
           </div>
         </div>
       </div>
@@ -335,7 +360,7 @@
     <section
       data-gjs-type="social"
       id="social"
-      class="gjs-block-section h-auto py-8 bg-amaniGrey"
+      class="gjs-block-section h-auto py-8 md:py-16 bg-amaniGrey"
     >
       <div class="max-w-[1240px] mx-auto px-4 flex flex-col gap-4">
         <h1
@@ -351,10 +376,10 @@
         </p>
 
         <div
-          class="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 gap-4 md:mt-6"
+          class="w-full grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 gap-4 md:mt-6 md:gap-8"
         >
           <div
-            class="size-40"
+            class="h-40 lg:h-48 w-full"
             style="
               background-image: url('./assets/images/instagram-1.png');
               background-position: center;
@@ -363,7 +388,7 @@
             "
           ></div>
           <div
-            class="size-40"
+            class="h-40 lg:h-48 w-full"
             style="
               background-image: url('./assets/images/instagram-2.png');
               background-position: center;
@@ -372,7 +397,7 @@
             "
           ></div>
           <div
-            class="size-40"
+            class="h-40 lg:h-48 w-full"
             style="
               background-image: url('./assets/images/instagram-3.png');
               background-position: center;
@@ -381,7 +406,7 @@
             "
           ></div>
           <div
-            class="size-40"
+            class="h-40 lg:h-48 w-full"
             style="
               background-image: url('./assets/images/instagram-4.png');
               background-position: center;
@@ -390,7 +415,7 @@
             "
           ></div>
           <div
-            class="size-40"
+            class="h-40 lg:h-48 w-full"
             style="
               background-image: url('./assets/images/instagram-5.png');
               background-position: center;
@@ -399,7 +424,7 @@
             "
           ></div>
           <div
-            class="size-40"
+            class="h-40 lg:h-48 w-full"
             style="
               background-image: url('./assets/images/instagram-6.png');
               background-position: center;
@@ -408,7 +433,7 @@
             "
           ></div>
           <div
-            class="size-40"
+            class="h-40 lg:h-48 w-full"
             style="
               background-image: url('./assets/images/instagram-7.png');
               background-position: center;
@@ -417,7 +442,7 @@
             "
           ></div>
           <div
-            class="size-40"
+            class="h-40 lg:h-48 w-full"
             style="
               background-image: url('./assets/images/instagram-8.png');
               background-position: center;
@@ -432,13 +457,13 @@
     <!-- FOOTER SECTION -->
     <section data-gjs-type="footer" id="footer" class="bg-black">
       <div
-        class="max-w-[1240px] mx-auto px-4 flex flex-col items-center gap-8 py-8"
+        class="max-w-[1240px] mx-auto px-4 flex flex-col items-center justify-between md:h-72 gap-8 py-8 md:pt-16"
       >
         <div
           class="w-full flex flex-col md:flex-row justify-between items-start gap-8"
         >
           <div
-            class="w-full space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
+            class="w-full md:w-max space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
           >
             <h1 class="capitalize font-lora text-lg">contacts</h1>
             <p class="capitalize font-work-sans">amaniyoga@gmail.com</p>
@@ -450,7 +475,7 @@
             </div>
           </div>
           <div
-            class="w-full space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
+            class="w-full md:w-max space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
           >
             <h1 class="capitalize font-lora text-lg">address</h1>
             <p class="capitalize font-work-sans">
@@ -459,7 +484,7 @@
             <p class="capitalize font-work-sans">+123 456 789</p>
           </div>
           <div
-            class="w-full space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
+            class="w-full md:w-max space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
           >
             <h1 class="capitalize font-lora text-lg">information</h1>
             <p class="capitalize font-work-sans">private policy</p>
