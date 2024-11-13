@@ -21,10 +21,10 @@
     >
       <div class="max-w-[1240px] p-4 mx-auto flex items-center justify-between">
         <div class="">
-          <h1 class="font-lora text-2xl font-semibold">Amani</h1>
+          <h1 class="text-2xl font-semibold font-lora">Amani</h1>
         </div>
         <div class="flex items-center gap-8 md:gap-14">
-          <nav class="hidden md:flex items-center gap-10">
+          <nav class="items-center hidden gap-10 md:flex">
             <a href="./index.html" class="capitalize font-work-sans">home</a>
             <a href="./about.html" class="capitalize font-work-sans"
               >about us</a
@@ -33,7 +33,7 @@
             <a href="" class="capitalize font-work-sans">contacts</a>
           </nav>
           <button
-            class="font-work-sans bg-black text-white capitalize px-2.5 h-10 w-28"
+            class="font-work-sans bg-black text-white capitalize px-2.5 h-10 w-28 rounded-md"
           >
             sign up
           </button>
@@ -45,7 +45,7 @@
     <section
       data-gjs-type="hero"
       id="hero"
-      class="gjs-block-section h-[calc(100vh-80px)] py-8 md:py-16 bg-amaniGrey"
+      class="gjs-block-section h-[calc(100vh-70px)] pt-32 bg-amaniGrey"
     >
       <div
         class="max-w-[1240px] mx-auto px-4 py-8 flex flex-col gap-8 lg:gap-14 items-center justify-between h-full"
@@ -57,17 +57,28 @@
           discover Amani - your sanctuary of peace and wellness
         </h1>
 
-        <span class="flex items-center flex-col gap-2 cursor-pointer w-max">
-          <p class="capitalize">
-            scroll <br />
-            down
-          </p>
-          <img
-            src="./assets/images/arrowDown.png"
-            alt="arrow icon"
-            class="h-10"
-          />
-        </span>
+        <div className=" w-max mx-auto flex items-center justify-center">
+          <div>
+            <h1
+              className="md:text-[24px] text-[18px] font-work-sans md:mb-8 mb-4 mx-auto text-center capitalize"
+            >
+              Scroll <br />Down
+            </h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="mx-auto md:w-[64px] md:h-[64px] w-[40px] h-[40px] animate-bounce"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12.013 3L12 20.789m7-6.776L12 21l-7-6.988"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -75,13 +86,13 @@
     <section
       data-gjs-type="about"
       id="about"
-      class="gjs-block-section h-auto py-8 md:py-16 bg-white"
+      class="h-auto py-16 bg-white gjs-block-section lg:py-32"
     >
       <div
         class="max-w-[1240px] mx-auto px-4 flex flex-col md:flex-row gap-8 items-center lg:gap-14 lg:grid lg:grid-cols-3 lg:grid-rows-4"
       >
         <div
-          class="w-full h-52 flex-1 lg:h-full lg:row-span-3 lg:col-start-1 lg:col-span-1"
+          class="w-full md:flex-1 h-60 lg:h-full lg:row-span-3 lg:col-start-1 lg:col-span-1"
           style="
             background-image: url('./assets/images/about-1.png');
             background-position: center;
@@ -90,7 +101,7 @@
           "
         ></div>
         <p
-          class="text-center font-work-sans flex-1 lg:col-start-2 lg:row-span-1 lg:row-start-2"
+          class="flex-1 text-center font-work-sans lg:col-start-2 lg:row-span-1 lg:row-start-2"
         >
           At Amani, we see yoga as a journey of self-discovery, balance, and
           growth. Our welcoming space fosters mindfulness, inclusivity, and
@@ -98,7 +109,7 @@
           mind.
         </p>
         <div
-          class="w-full h-52 flex-1 lg:h[500px] lg:col-start-3 lg:h-full lg:row-span-3 lg:row-start-2"
+          class="w-full h-60 md:flex-1 lg:h[500px] lg:col-start-3 lg:h-full lg:row-span-3 lg:row-start-2"
           style="
             background-image: url('./assets/images/about-2.png');
             background-position: center;
@@ -113,36 +124,34 @@
     <section
       data-gjs-type="philosophy"
       id="philosophy"
-      class="gjs-block-section h-auto py-8 md:py-16 bg-amaniGrey px-4 space-y-4 md:space-y-8 flex flex-col items-center"
+      class="flex flex-col items-center h-auto px-4 py-16 space-y-4 gjs-block-section lg:py-32 bg-amaniGrey md:space-y-8"
     >
-      <h1 class="font-lora uppercase text-2xl md:text-4xl text-center">
+      <h1 class="text-2xl text-center uppercase font-lora md:text-4xl">
         our philosophy
       </h1>
-      <p class="font-work-sans text-center md:w-4/5 lg:w-2/5">
+      <p class="text-center font-work-sans md:w-4/5 lg:w-2/5">
         Yoga is more than physical practice; it’s a pathway to harmony within.
         Through mindfulness, movement, and community, we empower you to connect
         deeply with yourself
       </p>
     </section>
 
-    <!-- SOCIAL/MOMENTS SECTION -->
+    <!-- GALLERY SECTION -->
     <section
-      data-gjs-type="social"
-      id="social"
-      class="gjs-block-section h-auto py-8 md:py-16 bg-white"
+      data-gjs-type="gallery"
+      id="gallery"
+      class="h-auto py-16 bg-white gjs-block-section lg:py-32"
     >
-      <div
-        class="max-w-[1240px] mx-auto px-4 flex flex-col items-center gap-4 md:gap-8"
-      >
-        <h1 class="font-lora uppercase text-2xl md:text-4xl text-center">
+      <div class="max-w-[1240px] mx-auto px-4 flex flex-col items-center gap-8">
+        <h1 class="text-2xl text-center uppercase font-lora md:text-4xl">
           moments at amani
         </h1>
 
         <div
-          class="grid grid-cols-2 grid-rows-3 md:grid-cols-4 md:grid-rows-2 gap-4 w-full md:gap-8"
+          class="grid w-full grid-cols-2 grid-rows-3 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-8"
         >
           <div
-            class="w-full h-48 md:h-full col-span-2 md:row-span-2"
+            class="w-full col-span-2 h-52 md:h-full md:row-span-2"
             style="
               background-image: url('./assets/images/about-2.png');
               background-position: center;
@@ -151,7 +160,7 @@
             "
           ></div>
           <div
-            class="w-full h-48"
+            class="w-full h-52"
             style="
               background-image: url('./assets/images/instagram-8.png');
               background-position: center;
@@ -160,7 +169,7 @@
             "
           ></div>
           <div
-            class="w-full h-48"
+            class="w-full h-52"
             style="
               background-image: url('./assets/images/instagram-6.png');
               background-position: center;
@@ -169,7 +178,7 @@
             "
           ></div>
           <div
-            class="w-full h-48"
+            class="w-full h-52"
             style="
               background-image: url('./assets/images/instagram-7.png');
               background-position: center;
@@ -178,7 +187,7 @@
             "
           ></div>
           <div
-            class="w-full h-48"
+            class="w-full h-52"
             style="
               background-image: url('./assets/images/instagram-5.png');
               background-position: center;
@@ -194,19 +203,19 @@
     <section
       data-gjs-type="cta"
       id="cta"
-      class="gjs-block-section h-auto py-8 md:py-16 bg-amaniGrey px-4 space-y-4 md:space-y-8 flex flex-col items-center"
+      class="flex flex-col items-center h-auto px-4 py-16 space-y-4 gjs-block-section lg:py-32 bg-amaniGrey md:space-y-8"
     >
-      <h1 class="font-lora uppercase text-2xl md:text-4xl text-center">
+      <h1 class="text-2xl text-center uppercase font-lora md:text-4xl">
         let's get <br class="" />
         you started
       </h1>
-      <p class="font-work-sans text-center md:w-4/5 lg:w-2/5">
+      <p class="text-center font-work-sans md:w-4/5 lg:w-2/5">
         Join us and discover the benefits of yoga in a peaceful and inspiring
         environment
       </p>
 
       <button
-        class="font-work-sans bg-black text-white capitalize px-2.5 h-10 w-28"
+        class="font-work-sans bg-white text-black capitalize px-2.5 h-10 w-28 rounded-md"
       >
         select plan
       </button>
@@ -218,14 +227,15 @@
         class="max-w-[1240px] mx-auto px-4 flex flex-col items-center justify-between md:h-72 gap-8 py-8 md:pt-16"
       >
         <div
-          class="w-full flex flex-col md:flex-row justify-between items-start gap-8"
+          class="flex flex-col items-start justify-between w-full gap-8 md:flex-row"
         >
           <div
             class="w-full md:w-max space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
           >
-            <h1 class="capitalize font-lora text-lg">contacts</h1>
-            <p class="capitalize font-work-sans">amaniyoga@gmail.com</p>
-            <div class="flex items-center gap-4">
+            <h1 class="text-sm font-bold capitalize font-lora">contacts</h1>
+            <p class="lowercase font-work-sans">amaniyoga@gmail.com</p>
+            <p class="capitalize font-work-sans">+123 456 789</p>
+            <div class="flex items-center gap-4 pt-4">
               <img src="./assets/images/instagram.png" alt="instagram icon" />
               <img src="./assets/images/twitter.png" alt="twitter icon" />
               <img src="./assets/images/telegram.png" alt="telegram icon" />
@@ -235,21 +245,20 @@
           <div
             class="w-full md:w-max space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
           >
-            <h1 class="capitalize font-lora text-lg">address</h1>
+            <h1 class="text-sm font-bold capitalize font-lora">address</h1>
             <p class="capitalize font-work-sans">
               107th St. Bluffon, CA 90303, USA
             </p>
-            <p class="capitalize font-work-sans">+123 456 789</p>
           </div>
           <div
             class="w-full md:w-max space-y-2 text-white *:text-center flex flex-col items-center md:items-start *:md:text-left"
           >
-            <h1 class="capitalize font-lora text-lg">information</h1>
+            <h1 class="text-sm font-bold capitalize font-lora">information</h1>
             <p class="capitalize font-work-sans">private policy</p>
             <p class="capitalize font-work-sans">contract offer</p>
           </div>
         </div>
-        <p class="capitalize text-white text-sm text-center">
+        <p class="text-sm text-center text-white capitalize">
           2023 &copy;Amani. all rights reserved
         </p>
       </div>
