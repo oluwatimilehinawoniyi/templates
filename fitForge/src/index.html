@@ -16,7 +16,7 @@
   <body>
     <!-- HERO SECTION -->
     <div
-      class="h-screen px-4"
+      class="h-screen px-4 w-full"
       style="
         background-image: url('./assets/Hero.jpg');
         background-repeat: no-repeat;
@@ -28,7 +28,7 @@
       <section
         data-gjs-type="navbar"
         id="navbar"
-        class="flex justify-between items-center max-w-[1200px] mx-auto py-8"
+        class="flex justify-between items-center max-w-[1200px] mx-auto py-8 w-full"
       >
         <div>
           <img id="logo" src="./assets/FitForge.png" alt="" class="" />
@@ -60,12 +60,13 @@
         class="flex flex-col gap-8 items-center max-w-[1200px] mx-auto justify-center h-[80vh]"
       >
         <h1
-          class="font-poppins uppercase text-white text-center text-6xl leading-[70px]"
+          class="font-poppins uppercase text-white text-center text-4xl md:text-6xl lg:leading-[70px]"
         >
           personal training <br class="hidden lg:block" />close to you
         </h1>
         <p class="font-work-sans text-white capitalize">
-          the fitness facility for all of your needs
+          the fitness facility <br class="md:hidden" />
+          for all of your needs
         </p>
         <button
           class="bg-blue text-white rounded-full font-work-sans py-4 px-12 capitalize"
@@ -77,10 +78,12 @@
 
     <!-- FEATURES SECTION -->
     <section id="features" data-gjs-type="features" class="py-16">
-      <div class="max-w-[1200px] mx-auto px-4">
-        <div class="h-[450px] w-full flex items-center">
+      <div class="max-w-[1200px] mx-auto px-4 space-y-10 md:space-y-0">
+        <div
+          class="h-auto md:h-[450px] w-full flex md:items-center flex-col md:flex-row gap-4 md:gap-0"
+        >
           <div
-            class="h-full w-1/2"
+            class="h-[350px] md:h-full w-full md:w-1/2"
             style="
               background-image: url('./assets/about-1.png');
               background-position: center;
@@ -89,7 +92,7 @@
             "
           ></div>
           <div
-            class="h-full w-1/2 flex flex-col gap-4 justify-center items-start px-12"
+            class="h-full w-full md:w-1/2 flex flex-col gap-4 justify-center items-start lg:px-12"
           >
             <h1 class="text-3xl capitalize">the experience</h1>
             <p>
@@ -104,9 +107,11 @@
             </button>
           </div>
         </div>
-        <div class="h-[450px] w-full flex items-center flex-row-reverse">
+        <div
+          class="h-auto md:h-[450px] w-full flex md:items-center flex-col md:flex-row-reverse gap-4 md:gap-0"
+        >
           <div
-            class="h-full w-1/2"
+            class="h-[350px] md:h-full w-full md:w-1/2"
             style="
               background-image: url('./assets/about-2.png');
               background-position: center;
@@ -115,7 +120,7 @@
             "
           ></div>
           <div
-            class="h-full w-1/2 flex flex-col gap-4 justify-center px-12 items-start"
+            class="h-full w-full md:w-1/2 flex flex-col gap-4 justify-center items-start lg:px-12"
           >
             <h1 class="text-3xl capitalize">
               A program crafted for your unique goals!
@@ -142,18 +147,21 @@
       <div
         id="gallery"
         data-gjs-type="gallery"
-        class="flex flex-col gap-4 max-w[1200px] mx-auto items-center"
+        class="flex flex-col gap-4 max-w[1200px] mx-auto items-center px-4"
       >
-        <h1 class="text-white uppercase text-center text-[40px]">
+        <h1 class="text-white uppercase text-center text-3xl md:text-[40px]">
           workout sanctuary
         </h1>
         <p class="text-white text-center mb-6">
-          Explore our state-of-the-art facilities with top equipment <br />
+          Explore our state-of-the-art facilities with top equipment
+          <br class="hidden lg:block" />
           and advanced fitness tracking—view the pictures!
         </p>
 
-        <ul class="w-full flex items-start gap-6 px-4 overflow-x-auto">
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+        <ul
+          class="w-full flex items-start gap-4 md:gap-6 md:px-4 overflow-x-auto"
+        >
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-1.png');
@@ -162,10 +170,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-2.png');
@@ -174,10 +182,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-3.png');
@@ -186,10 +194,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-4.png');
@@ -198,10 +206,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-1.png');
@@ -210,10 +218,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-2.png');
@@ -222,10 +230,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-3.png');
@@ -234,10 +242,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-4.png');
@@ -246,10 +254,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-1.png');
@@ -258,10 +266,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-2.png');
@@ -270,10 +278,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-3.png');
@@ -282,10 +290,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-4.png');
@@ -294,10 +302,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-1.png');
@@ -306,10 +314,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-2.png');
@@ -318,10 +326,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-3.png');
@@ -330,10 +338,10 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
-          <li class="w-full md:min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[200px] h-[350px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-4.png');
@@ -342,7 +350,7 @@
                 background-repeat: no-repeat;
               "
               alt=""
-              class="w-full h-[350px] object-cover"
+              class="size-full"
             ></div>
           </li>
         </ul>
@@ -351,22 +359,28 @@
 
     <!-- TESTIMONIAL SECTION -->
     <section id="testimonial" data-gjs-type="testimonial" class="py-16">
-      <div class="max-w-[1200px] mx-auto px-4 space-y-20">
-        <div class="flex items-center gap-4">
+      <div class="max-w-[1200px] mx-auto px-4 space-y-10 md:space-y-20">
+        <div class="flex md:items-center gap-4 flex-col md:flex-row">
           <span class="flex gap-2 items-end">
             <h1 class="text-5xl capitalize">
               what are our <br />
               clients saying?
             </h1>
-            <img src="./assets/curlyArrow.png" alt="curly arrow" />
+            <img
+              src="./assets/curlyArrow.png"
+              class="hidden md:block"
+              alt="curly arrow"
+            />
           </span>
-          <p class="w-3/12">
+          <p class="w-full md:w-3/12">
             Hear what our clients are saying! Their success stories inspire us
             and showcase the FitForge experience.
           </p>
         </div>
 
-        <div class="flex items-start gap-10 w-full">
+        <div
+          class="flex items-start flex-col md:flex-row gap-4 md:gap-10 w-full"
+        >
           <div
             class="max-w-[450px] min-h-[350px] w-full h-auto border shadow px-8 py-10 rounded-xl flex flex-col gap-8 justify-center"
             id="activeTestimonial"
@@ -406,7 +420,7 @@
                 <img src="./assets/Icon-1.png" alt="" />
               </span>
             </div>
-            <div class="others flex gap-8" id="inactiveTestimonialContainer">
+            <div class="others flex gap-8 overflow-x-auto" id="inactiveTestimonialContainer">
               <div
                 class="flex-1 w-full h-auto border shadow p-8 rounded-xl flex flex-col gap-8 justify-center"
                 id="inactiveTestimonial"
@@ -477,10 +491,16 @@
     </section>
 
     <!-- FOOTER SECTION -->
-    <section id="footer" data-gjs-type="footer" class="py-16 bg-blue">
+    <section
+      id="footer"
+      data-gjs-type="footer"
+      class="pb-8 md:pb-[unset] py-16 bg-blue"
+    >
       <div class="max-w-[1200px] mx-auto px-4">
-        <div class="w-full flex justify-between">
-          <div class="flex-1">
+        <div
+          class="w-full flex justify-between flex-col md:flex-row gap-8 md:gap-0"
+        >
+          <div class="flex-1 w-full">
             <p class="mb-4 uppercase text-white text-sm opacity-50">
               by the way
             </p>
@@ -491,7 +511,7 @@
             </h1>
 
             <div
-              class="border-2 rounded-lg flex items-center w-max px-4 py-2 gap-4"
+              class="border-2 rounded-lg flex items-center md:w-max px-4 py-2 gap-4 w-full justify-between"
             >
               <input
                 type="email"
@@ -527,7 +547,9 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center justify-between mt-8">
+        <div
+          class="flex md:items-center justify-between mt-8 flex-col md:flex-row gap-8 md:gap-0"
+        >
           <div class="flex items-center gap-4 flex-1">
             <img src="./assets/telegram.png" alt="telegram icon" />
             <img src="./assets/instagram.png" alt="instagram icon" />
@@ -535,7 +557,7 @@
           </div>
 
           <ul
-            class="*:text-white *:opacity-50 *:text-sm *:capitalize flex items-center justify-between flex-1"
+            class="*:text-white *:opacity-50 *:text-sm *:capitalize flex items-center w-full justify-between flex-1"
           >
             <li>privacy policy</li>
             <li>&copy;2023--Copyright</li>

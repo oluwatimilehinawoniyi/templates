@@ -128,10 +128,16 @@
     </section>
 
     <!-- FOOTER SECTION -->
-    <section id="footer" data-gjs-type="footer" class="py-16 bg-blue">
+    <section
+      id="footer"
+      data-gjs-type="footer"
+      class="pb-8 md:pb-[unset] py-16 bg-blue"
+    >
       <div class="max-w-[1200px] mx-auto px-4">
-        <div class="w-full flex justify-between">
-          <div class="flex-1">
+        <div
+          class="w-full flex justify-between flex-col md:flex-row gap-8 md:gap-0"
+        >
+          <div class="flex-1 w-full">
             <p class="mb-4 uppercase text-white text-sm opacity-50">
               by the way
             </p>
@@ -142,7 +148,7 @@
             </h1>
 
             <div
-              class="border-2 rounded-lg flex items-center w-max px-4 py-2 gap-4"
+              class="border-2 rounded-lg flex items-center md:w-max px-4 py-2 gap-4 w-full justify-between"
             >
               <input
                 type="email"
@@ -178,7 +184,9 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center justify-between mt-8">
+        <div
+          class="flex md:items-center justify-between mt-8 flex-col md:flex-row gap-8 md:gap-0"
+        >
           <div class="flex items-center gap-4 flex-1">
             <img src="./assets/telegram.png" alt="telegram icon" />
             <img src="./assets/instagram.png" alt="instagram icon" />
@@ -186,7 +194,7 @@
           </div>
 
           <ul
-            class="*:text-white *:opacity-50 *:text-sm *:capitalize flex items-center justify-between flex-1"
+            class="*:text-white *:opacity-50 *:text-sm *:capitalize flex items-center w-full justify-between flex-1"
           >
             <li>privacy policy</li>
             <li>&copy;2023--Copyright</li>
