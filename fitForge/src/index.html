@@ -16,7 +16,7 @@
   <body>
     <!-- HERO SECTION -->
     <div
-      class="h-screen px-4 w-full"
+      class="w-full h-screen px-4 md:px-8"
       style="
         background-image: url('./assets/Hero.jpg');
         background-repeat: no-repeat;
@@ -37,13 +37,13 @@
         <!-- menu button -->
         <p
           id="menu"
-          class="font-semibold w-max text-white underline capitalize underline-offset-2 md:hidden"
+          class="font-semibold text-white underline capitalize w-max underline-offset-2 md:hidden"
         >
           menu
         </p>
 
         <!-- nav list -->
-        <div class="hidden md:flex items-center gap-8 md:gap-14 text-white">
+        <div class="items-center hidden gap-8 text-white md:flex md:gap-14">
           <nav class="items-center hidden gap-10 md:flex font-work-sans">
             <a href="./index.html" class="capitalize font-work-sans">home</a>
             <a href="./about.html" class="capitalize font-work-sans">about</a>
@@ -64,12 +64,12 @@
         >
           personal training <br class="hidden lg:block" />close to you
         </h1>
-        <p class="font-work-sans text-white capitalize">
+        <p class="text-white capitalize font-work-sans">
           the fitness facility <br class="md:hidden" />
           for all of your needs
         </p>
         <button
-          class="bg-blue text-white rounded-full font-work-sans py-4 px-12 capitalize"
+          class="px-12 py-4 text-white capitalize rounded-full bg-blue font-work-sans"
         >
           join now
         </button>
@@ -77,8 +77,8 @@
     </div>
 
     <!-- FEATURES SECTION -->
-    <section id="features" data-gjs-type="features" class="py-16">
-      <div class="max-w-[1200px] mx-auto px-4 space-y-10 md:space-y-0">
+    <section id="features" data-gjs-type="features" class="py-16 lg:py-32">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-8 space-y-10 md:space-y-0">
         <div
           class="h-auto md:h-[450px] w-full flex md:items-center flex-col md:flex-row gap-4 md:gap-0"
         >
@@ -92,16 +92,18 @@
             "
           ></div>
           <div
-            class="h-full w-full md:w-1/2 flex flex-col gap-4 justify-center items-start lg:px-12"
+            class="flex flex-col items-center justify-center w-full h-full gap-4 md:items-start md:w-1/2 md:px-8 lg:px-12"
           >
-            <h1 class="text-3xl capitalize">the experience</h1>
-            <p>
+            <h1 class="text-3xl text-center capitalize md:text-left">
+              the experience
+            </h1>
+            <p class="text-center md:text-left">
               At FitForge, experience an inspiring community with personalized
               plans from certified trainers. With top-notch equipment and
               diverse classes, every visit empowers your fitness journey!
             </p>
             <button
-              class="border-blue border-2 text-blue rounded-full font-work-sans py-2 px-6 capitalize"
+              class="px-6 py-2 capitalize border-2 rounded-full border-blue text-blue font-work-sans"
             >
               learn more
             </button>
@@ -120,12 +122,12 @@
             "
           ></div>
           <div
-            class="h-full w-full md:w-1/2 flex flex-col gap-4 justify-center items-start lg:px-12"
+            class="flex flex-col items-center justify-center w-full h-full gap-4 md:items-start md:w-1/2 md:px-8 lg:px-12"
           >
-            <h1 class="text-3xl capitalize">
+            <h1 class="text-3xl text-center capitalize md:text-left">
               A program crafted for your unique goals!
             </h1>
-            <p>
+            <p class="text-center md:text-left">
               Whether you're new to fitness or looking to break through a
               plateau, our certified trainers at FitForge are here to help you
               reach your goals faster. With personalized plans, expert guidance,
@@ -133,7 +135,7 @@
               every step of the way.
             </p>
             <button
-              class="border-blue border-2 text-blue rounded-full font-work-sans py-2 px-6 capitalize"
+              class="px-6 py-2 capitalize border-2 rounded-full border-blue text-blue font-work-sans"
             >
               learn more
             </button>
@@ -143,23 +145,23 @@
     </section>
 
     <!-- GALLERY SECTION -->
-    <section class="py-16 bg-blue" id="gallery">
+    <section class="py-16 lg:py-32 bg-blue" id="gallery">
       <div
         id="gallery"
         data-gjs-type="gallery"
-        class="flex flex-col gap-4 max-w[1200px] mx-auto items-center px-4"
+        class="flex flex-col gap-4 max-w[1200px] mx-auto items-center px-4 md:px-8"
       >
         <h1 class="text-white uppercase text-center text-3xl md:text-[40px]">
           workout sanctuary
         </h1>
-        <p class="text-white text-center mb-6">
+        <p class="mb-6 text-center text-white lg:mb-12 md:w-3/5">
           Explore our state-of-the-art facilities with top equipment
           <br class="hidden lg:block" />
           and advanced fitness tracking—view the pictures!
         </p>
 
         <ul
-          class="w-full flex items-start gap-4 md:gap-6 md:px-4 overflow-x-auto"
+          class="flex items-start w-full gap-4 overflow-x-auto md:gap-6 md:px-4"
         >
           <li class="min-w-[200px] h-[350px] space-y-4">
             <div
@@ -358,11 +360,15 @@
     </section>
 
     <!-- TESTIMONIAL SECTION -->
-    <section id="testimonial" data-gjs-type="testimonial" class="py-16">
-      <div class="max-w-[1200px] mx-auto px-4 space-y-10 md:space-y-20">
-        <div class="flex md:items-center gap-4 flex-col md:flex-row">
-          <span class="flex gap-2 items-end">
-            <h1 class="text-5xl capitalize">
+    <section
+      id="testimonial"
+      data-gjs-type="testimonial"
+      class="py-16 lg:py-32"
+    >
+      <div class="max-w-[1200px] mx-auto px-4 md:px-8 space-y-10 md:space-y-20">
+        <div class="flex flex-col items-center gap-4 md:flex-row">
+          <span class="flex items-end gap-2">
+            <h1 class="text-5xl text-center capitalize md:text-left">
               what are our <br />
               clients saying?
             </h1>
@@ -372,14 +378,14 @@
               alt="curly arrow"
             />
           </span>
-          <p class="w-full md:w-3/12">
+          <p class="w-full text-center md:w-4/12 md:text-left">
             Hear what our clients are saying! Their success stories inspire us
             and showcase the FitForge experience.
           </p>
         </div>
 
         <div
-          class="flex items-start flex-col md:flex-row gap-4 md:gap-10 w-full"
+          class="flex flex-col items-start w-full gap-8 md:items-center lg:flex-row lg:gap-10"
         >
           <div
             class="max-w-[450px] min-h-[350px] w-full h-auto border shadow px-8 py-10 rounded-xl flex flex-col gap-8 justify-center"
@@ -396,7 +402,7 @@
                   background-repeat: no-repeat;
                 "
               ></div>
-              <p class="capitalize font-bold font-work-sans text-lg">
+              <p class="text-lg font-bold capitalize font-work-sans">
                 jane cobbs
               </p>
             </span>
@@ -407,8 +413,8 @@
               feel more confident than ever!"
             </p>
           </div>
-          <div class="flex flex-col gap-10 w-full">
-            <div class="flex items-center self-end gap-4">
+          <div class="flex flex-col w-full gap-10 md:items-center">
+            <div class="flex items-center self-center gap-4 lg:self-end">
               <span
                 class="bg-blue size-[48px] rounded-full flex items-center justify-center"
               >
@@ -421,7 +427,7 @@
               </span>
             </div>
             <div
-              class="others flex gap-4 md:gap-8 overflow-x-auto"
+              class="flex gap-4 overflow-x-auto others md:gap-8"
               id="inactiveTestimonialContainer"
             >
               <div
@@ -439,7 +445,7 @@
                       background-repeat: no-repeat;
                     "
                   ></div>
-                  <p class="capitalize font-bold font-work-sans text-lg">
+                  <p class="text-lg font-bold capitalize font-work-sans">
                     cameron akoh
                   </p>
                 </span>
@@ -465,7 +471,7 @@
                       background-repeat: no-repeat;
                     "
                   ></div>
-                  <p class="capitalize font-bold font-work-sans text-lg">
+                  <p class="text-lg font-bold capitalize font-work-sans">
                     robbie greenie
                   </p>
                 </span>
@@ -477,15 +483,15 @@
                 </p>
               </div>
             </div>
-            <div class="hidden md:flex flex-center gap-2">
+            <div class="self-center hidden gap-2 md:flex lg:self-start">
               <span
-                class="inline-block bg-blue border-blue border size-4 rounded-full"
+                class="inline-block border rounded-full bg-blue border-blue size-4"
               ></span>
               <span
-                class="inline-block bg-white border-blue border size-4 rounded-full -translate-y-2"
+                class="inline-block -translate-y-2 bg-white border rounded-full border-blue size-4"
               ></span>
               <span
-                class="inline-block bg-white border-blue border size-4 rounded-full"
+                class="inline-block bg-white border rounded-full border-blue size-4"
               ></span>
             </div>
           </div>
@@ -494,40 +500,40 @@
     </section>
 
     <!-- FOOTER SECTION -->
-    <section
-      id="footer"
-      data-gjs-type="footer"
-      class="pb-8 md:pb-[unset] py-16 bg-blue"
-    >
-      <div class="max-w-[1200px] mx-auto px-4">
+    <section id="footer" data-gjs-type="footer" class="py-16 pb-8 bg-blue">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-8">
         <div
-          class="w-full flex justify-between flex-col md:flex-row gap-8 md:gap-0"
+          class="flex flex-col justify-between w-full gap-8 md:flex-row md:gap-0"
         >
-          <div class="flex-1 w-full">
-            <p class="mb-4 uppercase text-white text-sm opacity-50">
+          <div
+            class="flex flex-col items-center md:items-start flex-1 w-full *:text-center *:md:text-left"
+          >
+            <p class="mb-4 text-sm text-white uppercase opacity-50">
               by the way
             </p>
 
-            <h1 class="mb-4 font-poppins capitalize text-white text-3xl">
+            <h1 class="mb-4 text-3xl text-white capitalize font-poppins">
               subscribe for our <br />
               newsletter
             </h1>
 
             <div
-              class="border-2 rounded-lg flex items-center md:w-max px-4 py-2 gap-4 w-full justify-between"
+              class="flex items-center justify-between w-full gap-4 px-4 py-2 border-2 rounded-lg md:w-max"
             >
               <input
                 type="email"
                 placeholder="E-mail"
-                class="bg-transparent focus:outline-none focus:border-none border-none text-white"
+                class="text-white bg-transparent border-none focus:outline-none focus:border-none"
               />
               <img src="./assets/arrowRight.png" alt="arrow icon" />
             </div>
           </div>
 
-          <div class="space-y-8 flex-1">
-            <div class="">
-              <p class="uppercase opacity-50 text-white text-sm mb-4">
+          <div
+            class="flex flex-col items-center flex-1 space-y-8 md:items-start"
+          >
+            <div class="*:text-center *:md:text-left">
+              <p class="mb-4 text-sm text-white uppercase opacity-50">
                 about us
               </p>
               <ul class="text-white *:capitalize space-y-2">
@@ -539,8 +545,8 @@
               </ul>
             </div>
 
-            <div class="">
-              <p class="uppercase opacity-50 text-white text-sm mb-4">
+            <div class="*:text-center *:md:text-left">
+              <p class="mb-4 text-sm text-white uppercase opacity-50">
                 contact us
               </p>
               <ul class="text-white *:capitalize space-y-2">
@@ -551,9 +557,9 @@
           </div>
         </div>
         <div
-          class="flex md:items-center justify-between mt-8 flex-col md:flex-row gap-8 md:gap-0"
+          class="flex flex-col items-center justify-between gap-8 mt-8 md:flex-row md:gap-0"
         >
-          <div class="flex items-center gap-4 flex-1">
+          <div class="flex items-center flex-1 gap-4">
             <img src="./assets/telegram.png" alt="telegram icon" />
             <img src="./assets/instagram.png" alt="instagram icon" />
             <img src="./assets/youtube.png" alt="youtube icon" />
