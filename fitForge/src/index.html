@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>FitForge | Home</title>
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <div
+      class="h-screen px-4"
+      style="
+        background-image: url('./assets/Hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <!--NAVBAR SECTION -->
+      <section
+        data-gjs-type="navbar"
+        id="navbar"
+        class="flex justify-between items-center max-w-[1200px] mx-auto py-8"
+      >
+        <div id="logo">
+          <img src="./assets/FitForge.png" alt="" class="" />
+        </div>
+
+        <!-- menu button -->
+        <p
+          id="menu"
+          class="font-semibold text-white underline capitalize underline-offset-2 md:hidden"
+        >
+          menu
+        </p>
+
+        <!-- nav list -->
+        <div class="flex items-center gap-8 md:gap-14 text-white">
+          <nav class="items-center hidden gap-10 md:flex font-work-sans">
+            <a href="./index.html" class="capitalize font-work-sans">home</a>
+            <a href="./about.html" class="capitalize font-work-sans">about</a>
+            <a href="" class="capitalize font-work-sans">classes</a>
+            <a href="" class="capitalize font-work-sans">contact</a>
+          </nav>
+        </div>
+      </section>
+
+      <!--HERO SECTION -->
+      <section
+        id="hero"
+        data-gjs-type="hero"
+        class="flex flex-col gap-4 items-center max-w-[1200px] mx-auto justify-center h-[80vh]"
+      >
+        <h1 class="font-poppins uppercase text-white text-4xl">
+          personal training close to you
+        </h1>
+        <p class="font-work-sans text-white capitalize">
+          the fitness facility for all of your needs
+        </p>
+        <button
+          class="bg-blue text-white rounded-full font-work-sans py-2 px-6 capitalize"
+        >
+          join now
+        </button>
+      </section>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" data-gjs-type="features" class="py-16">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <div class="h-[400px] w-full flex items-center">
+          <div
+            class="h-full w-1/2"
+            style="
+              background-image: url('./assets/about-1.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="h-full w-1/2 flex flex-col gap-4 justify-center items-start px-8"
+          >
+            <h1 class="">the experience</h1>
+            <p>
+              At FitForge, experience an inspiring community with personalized
+              plans from certified trainers. With top-notch equipment and
+              diverse classes, every visit empowers your fitness journey!
+            </p>
+            <button
+              class="border-blue border-2 text-blue rounded-full font-work-sans py-2 px-6 capitalize"
+            >
+              learn more
+            </button>
+          </div>
+        </div>
+        <div class="h-[400px] w-full flex items-center flex-row-reverse">
+          <div
+            class="h-full w-1/2"
+            style="
+              background-image: url('./assets/about-2.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div
+            class="h-full w-1/2 flex flex-col gap-4 justify-center px-8 items-start"
+          >
+            <h1 class="">the experience</h1>
+            <p>
+              At FitForge, experience an inspiring community with personalized
+              plans from certified trainers. With top-notch equipment and
+              diverse classes, every visit empowers your fitness journey!
+            </p>
+            <button
+              class="border-blue border-2 text-blue rounded-full font-work-sans py-2 px-6 capitalize"
+            >
+              learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section
+      id="gallery"
+      data-gjs-type="gallery"
+      class="py-16 bg-blue flex flex-col gap-4 items-center"
+    >
+      <h1 class="text-white uppercase text-center">workout sanctuary</h1>
+      <p class="text-white text-center">
+        Explore our state-of-the-art facilities with top equipment <br />
+        and advanced fitness tracking—view the pictures!
+      </p>
+
+      <div class="flex gap-4 overflow-x-scroll px-4 w-full">
+        <div
+          class="h-[350px] min-w-[200px]"
+          style="
+            background-image: url('./assets/carousel-4.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        ></div>
+        <div
+          class="h-[350px] min-w-[200px]"
+          style="
+            background-image: url('./assets/carousel-1.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        ></div>
+        <div
+          class="h-[350px] min-w-[200px]"
+          style="
+            background-image: url('./assets/carousel-2.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        ></div>
+        <div
+          class="h-[350px] min-w-[200px]"
+          style="
+            background-image: url('./assets/carousel-3.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        ></div>
+        <div
+          class="h-[350px] min-w-[200px]"
+          style="
+            background-image: url('./assets/carousel-4.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        ></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section id="testimonial" data-gjs-type="testimonial" class="py-16">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <div class="flex">
+          <span class="flex items-end">
+            <h1 class="text-5xl capitalize">
+              what our <br />
+              client saying
+            </h1>
+            <img src="./assets/curlyArrow.png" alt="curly arrow" />
+          </span>
+          <p class="">
+            Hear what our clients are saying! their success stories inspire us
+            and showcase the FitForge experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section id="footer" data-gjs-type="footer" class="py-16 bg-blue">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <div class="w-full flex justify-between">
+          <div class="flex-1">
+            <p class="mb-4 uppercase text-white text-sm opacity-50">
+              by the way
+            </p>
+
+            <h1 class="mb-4 font-poppins capitalize text-white text-3xl">
+              subscribe for our <br />
+              newsletter
+            </h1>
+
+            <div
+              class="border-2 rounded-lg flex items-center w-max px-4 py-2 gap-4"
+            >
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="bg-transparent focus:outline-none focus:border-none border-none text-white"
+              />
+              <img src="./assets/arrowRight.png" alt="arrow icon" />
+            </div>
+          </div>
+
+          <div class="space-y-8 flex-1">
+            <div class="">
+              <p class="uppercase opacity-50 text-white text-sm mb-4">
+                about us
+              </p>
+              <ul class="text-white *:capitalize space-y-2">
+                <li class="">services</li>
+                <li class="">membership</li>
+                <li class="">testimonials</li>
+                <li class="">news</li>
+                <li class="">contacts</li>
+              </ul>
+            </div>
+
+            <div class="">
+              <p class="uppercase opacity-50 text-white text-sm mb-4">
+                contact us
+              </p>
+              <ul class="text-white *:capitalize space-y-2">
+                <li class="">+1 (001) 981-76-17</li>
+                <li class="">info@fitforge.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between mt-8">
+          <div class="flex items-center gap-4 flex-1">
+            <img src="./assets/telegram.png" alt="telegram icon" />
+            <img src="./assets/instagram.png" alt="instagram icon" />
+            <img src="./assets/youtube.png" alt="youtube icon" />
+          </div>
+
+          <ul
+            class="*:text-white *:opacity-50 *:text-sm *:capitalize flex items-center justify-between flex-1"
+          >
+            <li>privacy policy</li>
+            <li>&copy;2023--Copyright</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
