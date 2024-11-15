@@ -1255,6 +1255,10 @@ video {
   line-height: 64px;
 }
 
+.leading-\[70px\] {
+  line-height: 70px;
+}
+
 .text-blue {
   --tw-text-opacity: 1;
   color: rgb(0 31 63 / var(--tw-text-opacity));
