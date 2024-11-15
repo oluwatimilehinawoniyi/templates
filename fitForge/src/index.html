@@ -30,8 +30,8 @@
         id="navbar"
         class="flex justify-between items-center max-w-[1200px] mx-auto py-8"
       >
-        <div id="logo">
-          <img src="./assets/FitForge.png" alt="" class="" />
+        <div>
+          <img id="logo" src="./assets/FitForge.png" alt="" class="" />
         </div>
 
         <!-- menu button -->
@@ -57,16 +57,16 @@
       <section
         id="hero"
         data-gjs-type="hero"
-        class="flex flex-col gap-4 items-center max-w-[1200px] mx-auto justify-center h-[80vh]"
+        class="flex flex-col gap-8 items-center max-w-[1200px] mx-auto justify-center h-[80vh]"
       >
-        <h1 class="font-poppins uppercase text-white text-4xl">
-          personal training close to you
+        <h1 class="font-poppins uppercase text-white text-center text-6xl">
+          personal training <br class="hidden lg:block" />close to you
         </h1>
         <p class="font-work-sans text-white capitalize">
           the fitness facility for all of your needs
         </p>
         <button
-          class="bg-blue text-white rounded-full font-work-sans py-2 px-6 capitalize"
+          class="bg-blue text-white rounded-full font-work-sans py-4 px-12 capitalize"
         >
           join now
         </button>
@@ -76,7 +76,7 @@
     <!-- FEATURES SECTION -->
     <section id="features" data-gjs-type="features" class="py-16">
       <div class="max-w-[1200px] mx-auto px-4">
-        <div class="h-[400px] w-full flex items-center">
+        <div class="h-[450px] w-full flex items-center">
           <div
             class="h-full w-1/2"
             style="
@@ -87,9 +87,9 @@
             "
           ></div>
           <div
-            class="h-full w-1/2 flex flex-col gap-4 justify-center items-start px-8"
+            class="h-full w-1/2 flex flex-col gap-4 justify-center items-start px-12"
           >
-            <h1 class="">the experience</h1>
+            <h1 class="text-3xl capitalize">the experience</h1>
             <p>
               At FitForge, experience an inspiring community with personalized
               plans from certified trainers. With top-notch equipment and
@@ -102,7 +102,7 @@
             </button>
           </div>
         </div>
-        <div class="h-[400px] w-full flex items-center flex-row-reverse">
+        <div class="h-[450px] w-full flex items-center flex-row-reverse">
           <div
             class="h-full w-1/2"
             style="
@@ -113,13 +113,17 @@
             "
           ></div>
           <div
-            class="h-full w-1/2 flex flex-col gap-4 justify-center px-8 items-start"
+            class="h-full w-1/2 flex flex-col gap-4 justify-center px-12 items-start"
           >
-            <h1 class="">the experience</h1>
+            <h1 class="text-3xl capitalize">
+              A program crafted for your unique goals!
+            </h1>
             <p>
-              At FitForge, experience an inspiring community with personalized
-              plans from certified trainers. With top-notch equipment and
-              diverse classes, every visit empowers your fitness journey!
+              Whether you're new to fitness or looking to break through a
+              plateau, our certified trainers at FitForge are here to help you
+              reach your goals faster. With personalized plans, expert guidance,
+              and ongoing support, we’ll keep you motivated, safe, and on track
+              every step of the way.
             </p>
             <button
               class="border-blue border-2 text-blue rounded-full font-work-sans py-2 px-6 capitalize"
@@ -194,19 +198,127 @@
 
     <!-- TESTIMONIAL SECTION -->
     <section id="testimonial" data-gjs-type="testimonial" class="py-16">
-      <div class="max-w-[1200px] mx-auto px-4">
-        <div class="flex">
-          <span class="flex items-end">
+      <div class="max-w-[1200px] mx-auto px-4 space-y-20">
+        <div class="flex items-center gap-4">
+          <span class="flex gap-2 items-end">
             <h1 class="text-5xl capitalize">
-              what our <br />
-              client saying
+              what are our <br />
+              clients saying?
             </h1>
             <img src="./assets/curlyArrow.png" alt="curly arrow" />
           </span>
-          <p class="">
-            Hear what our clients are saying! their success stories inspire us
+          <p class="w-3/12">
+            Hear what our clients are saying! Their success stories inspire us
             and showcase the FitForge experience.
           </p>
+        </div>
+
+        <div class="flex items-start gap-10 w-full">
+          <div
+            class="max-w-[450px] min-h-[350px] w-full h-auto border shadow px-8 py-10 rounded-xl flex flex-col gap-8 justify-center"
+            id="activeTestimonial"
+          >
+            <span class="flex items-center gap-8">
+              <div
+                id="activeTestimonialImage"
+                class="w-[50px] h-[50px]"
+                style="
+                  background-image: url('./assets/testimony-1.png');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              ></div>
+              <p class="capitalize font-bold font-work-sans text-lg">
+                jane cobbs
+              </p>
+            </span>
+            <p>
+              "Joining FitForge has been a game changer for me! The personal
+              trainers really listen to my goals and have created a workout plan
+              that works for my busy schedule. I've seen amazing results and
+              feel more confident than ever!"
+            </p>
+          </div>
+          <div class="flex flex-col gap-10 w-full">
+            <div class="flex items-center self-end gap-4">
+              <span
+                class="bg-blue size-[48px] rounded-full flex items-center justify-center"
+              >
+                <img src="./assets/Icon.png" alt="" />
+              </span>
+              <span
+                class="bg-blue/10 size-[48px] rounded-full flex items-center justify-center"
+              >
+                <img src="./assets/Icon-1.png" alt="" />
+              </span>
+            </div>
+            <div class="others flex gap-8" id="inactiveTestimonialContainer">
+              <div
+                class="flex-1 w-full h-auto border shadow p-8 rounded-xl flex flex-col gap-8 justify-center"
+                id="inactiveTestimonial"
+              >
+                <span class="flex items-center gap-8">
+                  <div
+                    id="activeTestimonialImage"
+                    class="w-[50px] h-[50px]"
+                    style="
+                      background-image: url('./assets/testimony-2.png');
+                      background-position: center;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                    "
+                  ></div>
+                  <p class="capitalize font-bold font-work-sans text-lg">
+                    cameron akoh
+                  </p>
+                </span>
+                <p>
+                  "I've been to several gyms, but FitForge stands out for its
+                  supportive community and knowledgeable trainers. They helped
+                  me push past my limits and stay motivated. I never thought I'd
+                  enjoy working out this much!"
+                </p>
+              </div>
+              <div
+                class="flex-1 w-full h-auto border shadow px-8 py-10 rounded-xl flex flex-col gap-8 justify-center"
+                id="inactiveTestimonial"
+              >
+                <span class="flex items-center gap-8">
+                  <div
+                    id="activeTestimonialImage"
+                    class="w-[50px] h-[50px]"
+                    style="
+                      background-image: url('./assets/testimony-3.png');
+                      background-position: center;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                    "
+                  ></div>
+                  <p class="capitalize font-bold font-work-sans text-lg">
+                    robbie greenie
+                  </p>
+                </span>
+                <p>
+                  "FitForge is more than just a gym—it's a place where I feel
+                  empowered to reach my goals. The trainers are passionate and
+                  genuinely care about my progress. I love the variety of
+                  workouts and the positive atmosphere!"
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-center gap-2">
+              <span
+                class="inline-block bg-blue border-blue border size-4 rounded-full"
+              ></span>
+              <span
+                class="inline-block bg-white border-blue border size-4 rounded-full -translate-y-2"
+              ></span>
+              <span
+                class="inline-block bg-white border-blue border size-4 rounded-full"
+              ></span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

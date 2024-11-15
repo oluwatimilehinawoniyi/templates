@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>FitForge | About</title>
+  </head>
+  <body>
+    <div class="h-screen px-4 bg-blue">
+      <!--NAVBAR SECTION -->
+      <section
+        data-gjs-type="navbar"
+        id="navbar"
+        class="flex justify-between items-center max-w-[1200px] mx-auto py-8"
+      >
+        <div>
+          <img id="logo" src="./assets/FitForge.png" alt="" class="" />
+        </div>
+
+        <!-- menu button -->
+        <p
+          id="menu"
+          class="font-semibold text-white underline capitalize underline-offset-2 md:hidden"
+        >
+          menu
+        </p>
+
+        <!-- nav list -->
+        <div class="flex items-center gap-8 md:gap-14 text-white">
+          <nav class="items-center hidden gap-10 md:flex font-work-sans">
+            <a href="./index.html" class="capitalize font-work-sans">home</a>
+            <a href="./about.html" class="capitalize font-work-sans">about</a>
+            <a href="" class="capitalize font-work-sans">classes</a>
+            <a href="" class="capitalize font-work-sans">contact</a>
+          </nav>
+        </div>
+      </section>
+
+      <!--HERO SECTION -->
+      <section
+        id="hero"
+        data-gjs-type="hero"
+        class="flex flex-col gap-8 items-center max-w-[1200px] mx-auto justify-center h-[80vh]"
+      >
+        <h1 class="font-poppins uppercase text-white text-center text-6xl">
+          our story
+        </h1>
+        <p class="font-work-sans text-white capitalize w-3/5 text-center">
+          FitForge was born from a vision to create a welcoming space for all
+          fitness journeys. Founded by passionate enthusiasts, we focus on
+          community and personalized support. With expert training and diverse
+          classes, we’re dedicated to helping every member thrive in their
+          pursuit of health and wellness.
+        </p>
+      </section>
+    </div>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section id="philosophy" data-gjs-type="philosophy" class="pb-2 px-4">
+      <div
+        class="-translate-y-36 max-w-[1200px] flex items-center h-[780px] mx-auto"
+      >
+        <div
+          class="w-1/2 h-full flex flex-col gap-8 items-start justify-center px-10 shadow bg-white"
+        >
+          <h1 class="text-3xl capitalize">the fitforge philosophy</h1>
+          <p>
+            At FitForge, we believe fitness is a personal journey that
+            encompasses both body and mind. Our philosophy centers on
+            inclusivity, empowerment, and holistic well-being. We strive to
+            create a supportive environment where everyone can thrive,
+            encouraging growth through expert guidance and a vibrant community.
+            Together, we forge paths to healthier, stronger lives.
+          </p>
+        </div>
+        <div
+          class="w-1/2 h-full"
+          style="
+            background-image: url('./assets/philosophy.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          "
+        ></div>
+      </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section
+      id="quote"
+      class="h-[450px] flex items-center justify-center"
+      data-gjs-type="quote"
+      style="
+        background-image: url('./assets/quote.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+    >
+      <div class="text-white lg:w-2/5 mx-auto space-y-8">
+        <p class="font-work-sans text-2xl leading-10">
+          "Fitness is not about being better than someone else; it’s about being
+          better than you used to be."
+        </p>
+
+        <p class="font-work-sans">- Michael</p>
+      </div>
+    </section>
+
+    <!-- OFFICE SECTION -->
+    <section
+      data-gjs-type="office"
+      id="office"
+      class="py-32 flex justify-center items-start gap-x-44"
+    >
+      <div class="*:text-center flex flex-col items-center gap-4">
+        <h1 class="text-3xl capitalize font-poppins">location</h1>
+        <p class="w-2/3">123 Crestart St. Houston, TX 023400</p>
+      </div>
+      <div class="*:text-center flex flex-col items-center gap-4">
+        <h1 class="text-3xl capitalize font-poppins">hours</h1>
+        <ul class="">
+          <li>Weekdays: 7 AM - 8 PM</li>
+          <li>Weekends: 9 AM - 3 PM</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section id="footer" data-gjs-type="footer" class="py-16 bg-blue">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <div class="w-full flex justify-between">
+          <div class="flex-1">
+            <p class="mb-4 uppercase text-white text-sm opacity-50">
+              by the way
+            </p>
+
+            <h1 class="mb-4 font-poppins capitalize text-white text-3xl">
+              subscribe for our <br />
+              newsletter
+            </h1>
+
+            <div
+              class="border-2 rounded-lg flex items-center w-max px-4 py-2 gap-4"
+            >
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="bg-transparent focus:outline-none focus:border-none border-none text-white"
+              />
+              <img src="./assets/arrowRight.png" alt="arrow icon" />
+            </div>
+          </div>
+
+          <div class="space-y-8 flex-1">
+            <div class="">
+              <p class="uppercase opacity-50 text-white text-sm mb-4">
+                about us
+              </p>
+              <ul class="text-white *:capitalize space-y-2">
+                <li class="">services</li>
+                <li class="">membership</li>
+                <li class="">testimonials</li>
+                <li class="">news</li>
+                <li class="">contacts</li>
+              </ul>
+            </div>
+
+            <div class="">
+              <p class="uppercase opacity-50 text-white text-sm mb-4">
+                contact us
+              </p>
+              <ul class="text-white *:capitalize space-y-2">
+                <li class="">+1 (001) 981-76-17</li>
+                <li class="">info@fitforge.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between mt-8">
+          <div class="flex items-center gap-4 flex-1">
+            <img src="./assets/telegram.png" alt="telegram icon" />
+            <img src="./assets/instagram.png" alt="instagram icon" />
+            <img src="./assets/youtube.png" alt="youtube icon" />
+          </div>
+
+          <ul
+            class="*:text-white *:opacity-50 *:text-sm *:capitalize flex items-center justify-between flex-1"
+          >
+            <li>privacy policy</li>
+            <li>&copy;2023--Copyright</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
