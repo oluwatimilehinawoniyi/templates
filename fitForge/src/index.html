@@ -30,20 +30,20 @@
         id="navbar"
         class="flex justify-between items-center max-w-[1200px] mx-auto py-8 w-full"
       >
-        <div>
-          <img id="logo" src="./assets/FitForge.png" alt="" class="" />
+        <div class="w-24 md:w-40">
+          <img id="logo" src="./assets/FitForge.png" alt="" />
         </div>
 
         <!-- menu button -->
         <p
           id="menu"
-          class="font-semibold text-white underline capitalize underline-offset-2 md:hidden"
+          class="font-semibold w-max text-white underline capitalize underline-offset-2 md:hidden"
         >
           menu
         </p>
 
         <!-- nav list -->
-        <div class="flex items-center gap-8 md:gap-14 text-white">
+        <div class="hidden md:flex items-center gap-8 md:gap-14 text-white">
           <nav class="items-center hidden gap-10 md:flex font-work-sans">
             <a href="./index.html" class="capitalize font-work-sans">home</a>
             <a href="./about.html" class="capitalize font-work-sans">about</a>
@@ -60,7 +60,7 @@
         class="flex flex-col gap-8 items-center max-w-[1200px] mx-auto justify-center h-[80vh]"
       >
         <h1
-          class="font-poppins uppercase text-white text-center text-4xl md:text-6xl lg:leading-[70px]"
+          class="font-poppins uppercase text-white text-center text-5xl md:text-6xl lg:leading-[70px]"
         >
           personal training <br class="hidden lg:block" />close to you
         </h1>
@@ -420,9 +420,12 @@
                 <img src="./assets/Icon-1.png" alt="" />
               </span>
             </div>
-            <div class="others flex gap-8 overflow-x-auto" id="inactiveTestimonialContainer">
+            <div
+              class="others flex gap-4 md:gap-8 overflow-x-auto"
+              id="inactiveTestimonialContainer"
+            >
               <div
-                class="flex-1 w-full h-auto border shadow p-8 rounded-xl flex flex-col gap-8 justify-center"
+                class="flex-1 w-full min-w-[300px] h-[350px] md:h-auto border shadow p-8 rounded-xl flex flex-col gap-8 justify-center"
                 id="inactiveTestimonial"
               >
                 <span class="flex items-center gap-8">
@@ -448,7 +451,7 @@
                 </p>
               </div>
               <div
-                class="flex-1 w-full h-auto border shadow px-8 py-10 rounded-xl flex flex-col gap-8 justify-center"
+                class="flex-1 w-full min-w-[300px] h-[350px] md:h-auto border shadow px-8 py-10 rounded-xl flex flex-col gap-8 justify-center"
                 id="inactiveTestimonial"
               >
                 <span class="flex items-center gap-8">
@@ -474,7 +477,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-center gap-2">
+            <div class="hidden md:flex flex-center gap-2">
               <span
                 class="inline-block bg-blue border-blue border size-4 rounded-full"
               ></span>

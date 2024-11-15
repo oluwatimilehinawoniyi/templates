@@ -650,6 +650,10 @@ video {
   min-height: 350px;
 }
 
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -685,6 +689,14 @@ video {
 
 .w-\[350px\] {
   width: 350px;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .min-w-\[300px\] {
@@ -1090,6 +1102,10 @@ video {
     height: 450px;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1133,6 +1149,10 @@ video {
 
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
