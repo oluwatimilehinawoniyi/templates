@@ -28,7 +28,7 @@
       <section
         data-gjs-type="navbar"
         id="navbar"
-        class="flex justify-between items-center max-w-[1200px] mx-auto py-8 w-full"
+        class="gjs-block-section flex justify-between items-center max-w-[1200px] mx-auto py-8 w-full"
       >
         <div class="w-24 md:w-40">
           <img id="logo" src="./assets/FitForge.png" alt="" />
@@ -57,10 +57,10 @@
       <section
         id="hero"
         data-gjs-type="hero"
-        class="flex flex-col gap-8 items-center max-w-[1200px] mx-auto justify-center h-[80vh]"
+        class="gjs-block-section flex flex-col gap-4 md:gap-8 items-center max-w-[1200px] mx-auto justify-center h-[80vh]"
       >
         <h1
-          class="font-poppins uppercase text-white text-center text-5xl md:text-6xl lg:leading-[70px]"
+          class="font-poppins uppercase text-white text-center text-3xl md:text-6xl lg:leading-[70px]"
         >
           personal training <br class="hidden lg:block" />close to you
         </h1>
@@ -77,7 +77,11 @@
     </div>
 
     <!-- FEATURES SECTION -->
-    <section id="features" data-gjs-type="features" class="py-16 lg:py-32">
+    <section
+      id="features"
+      data-gjs-type="features"
+      class="py-16 gjs-block-section lg:py-32"
+    >
       <div class="max-w-[1200px] mx-auto px-4 md:px-8 space-y-10 md:space-y-0">
         <div
           class="h-auto md:h-[450px] w-full flex md:items-center flex-col md:flex-row gap-4 md:gap-0"
@@ -94,7 +98,9 @@
           <div
             class="flex flex-col items-center justify-center w-full h-full gap-4 md:items-start md:w-1/2 md:px-8 lg:px-12"
           >
-            <h1 class="text-3xl text-center capitalize md:text-left">
+            <h1
+              class="text-2xl text-center capitalize md:text-3xl md:text-left"
+            >
               the experience
             </h1>
             <p class="text-center md:text-left">
@@ -124,7 +130,9 @@
           <div
             class="flex flex-col items-center justify-center w-full h-full gap-4 md:items-start md:w-1/2 md:px-8 lg:px-12"
           >
-            <h1 class="text-3xl text-center capitalize md:text-left">
+            <h1
+              class="text-2xl text-center capitalize md:text-3xl md:text-left"
+            >
               A program crafted for your unique goals!
             </h1>
             <p class="text-center md:text-left">
@@ -145,13 +153,17 @@
     </section>
 
     <!-- GALLERY SECTION -->
-    <section class="py-16 lg:py-32 bg-blue" id="gallery">
+    <section
+      data-gjs-type="gallery"
+      class="py-16 bg-blue gjs-block-section"
+      id="gallery"
+    >
       <div
         id="gallery"
         data-gjs-type="gallery"
         class="flex flex-col gap-4 max-w[1200px] mx-auto items-center px-4 md:px-8"
       >
-        <h1 class="text-white uppercase text-center text-3xl md:text-[40px]">
+        <h1 class="text-white uppercase text-center text-2xl md:text-[40px]">
           workout sanctuary
         </h1>
         <p class="mb-6 text-center text-white lg:mb-12 md:w-3/5">
@@ -163,7 +175,7 @@
         <ul
           class="flex items-start w-full gap-4 overflow-x-auto md:gap-6 md:px-4"
         >
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-1.png');
@@ -175,7 +187,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-2.png');
@@ -187,7 +199,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-3.png');
@@ -199,7 +211,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-4.png');
@@ -211,7 +223,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-1.png');
@@ -223,7 +235,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-2.png');
@@ -235,7 +247,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-3.png');
@@ -247,7 +259,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-4.png');
@@ -259,7 +271,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-1.png');
@@ -271,7 +283,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-2.png');
@@ -283,7 +295,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-3.png');
@@ -295,7 +307,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-4.png');
@@ -307,7 +319,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-1.png');
@@ -319,7 +331,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-2.png');
@@ -331,7 +343,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-3.png');
@@ -343,7 +355,7 @@
               class="size-full"
             ></div>
           </li>
-          <li class="min-w-[200px] h-[350px] space-y-4">
+          <li class="min-w-[250px] h-[370px] space-y-4">
             <div
               style="
                 background-image: url('./assets/carousel-4.png');
@@ -363,12 +375,14 @@
     <section
       id="testimonial"
       data-gjs-type="testimonial"
-      class="py-16 lg:py-32"
+      class="py-16 gjs-block-section lg:py-24"
     >
       <div class="max-w-[1200px] mx-auto px-4 md:px-8 space-y-10 md:space-y-20">
         <div class="flex flex-col items-center gap-4 md:flex-row">
           <span class="flex items-end gap-2">
-            <h1 class="text-5xl text-center capitalize md:text-left">
+            <h1
+              class="text-2xl text-center capitalize md:text-5xl md:text-left"
+            >
               what are our <br />
               clients saying?
             </h1>
@@ -427,7 +441,7 @@
               </span>
             </div>
             <div
-              class="flex gap-4 overflow-x-auto others md:gap-8"
+              class="hidden gap-4 overflow-x-auto md:flex others md:gap-8"
               id="inactiveTestimonialContainer"
             >
               <div
@@ -500,14 +514,16 @@
     </section>
 
     <!-- FOOTER SECTION -->
-    <section id="footer" data-gjs-type="footer" class="py-16 pb-8 bg-blue">
+    <section
+      id="footer"
+      data-gjs-type="footer"
+      class="py-16 pb-8 gjs-block-section bg-blue"
+    >
       <div class="max-w-[1200px] mx-auto px-4 md:px-8">
         <div
-          class="flex flex-col justify-between w-full gap-8 md:flex-row md:gap-0"
+          class="flex flex-col justify-between w-full gap-14 md:flex-row md:gap-0"
         >
-          <div
-            class="flex flex-col items-center md:items-start flex-1 w-full *:text-center *:md:text-left"
-          >
+          <div class="flex flex-col flex-1 w-full *:md:text-left">
             <p class="mb-4 text-sm text-white uppercase opacity-50">
               by the way
             </p>
@@ -529,10 +545,8 @@
             </div>
           </div>
 
-          <div
-            class="flex flex-col items-center flex-1 space-y-8 md:items-start"
-          >
-            <div class="*:text-center *:md:text-left">
+          <div class="flex flex-row items-start justify-between flex-1">
+            <div class="">
               <p class="mb-4 text-sm text-white uppercase opacity-50">
                 about us
               </p>
@@ -545,7 +559,7 @@
               </ul>
             </div>
 
-            <div class="*:text-center *:md:text-left">
+            <div class="">
               <p class="mb-4 text-sm text-white uppercase opacity-50">
                 contact us
               </p>
@@ -557,20 +571,21 @@
           </div>
         </div>
         <div
-          class="flex flex-col items-center justify-between gap-8 mt-8 md:flex-row md:gap-0"
+          class="flex flex-row flex-wrap items-center justify-between w-full gap-8 mt-8 md:mt-16 md:gap-0"
         >
-          <div class="flex items-center flex-1 gap-4">
+          <div class="flex items-center gap-4 flex1">
             <img src="./assets/telegram.png" alt="telegram icon" />
             <img src="./assets/instagram.png" alt="instagram icon" />
             <img src="./assets/youtube.png" alt="youtube icon" />
           </div>
 
-          <ul
-            class="*:text-white *:opacity-50 *:text-sm *:capitalize flex items-center w-full justify-between flex-1"
-          >
-            <li>privacy policy</li>
-            <li>&copy;2023--Copyright</li>
-          </ul>
+          <p class="text-sm text-white capitalize opacity-50">privacy policy</p>
+
+          <div class="w-full md:w-max">
+            <p class="text-sm text-center text-white capitalize opacity-50">
+              &copy;2023 Copyright
+            </p>
+          </div>
         </div>
       </div>
     </section>
